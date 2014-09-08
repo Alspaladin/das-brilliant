@@ -1,0 +1,106 @@
+.header
+  overflow hidden
+  position fixed
+  z-index 2
+  width 100%
+  height 160px
+
+  &::before
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100vh
+    background-position center center
+    background-size cover
+    content ''
+
+.logo
+  display block
+  position absolute
+  z-index 2
+  left 26px
+  top: 26px
+  width 260px
+  height 40px
+  
+  &::before
+    position absolute
+    left 0
+    top 0
+    width 39px
+    height 39px
+    background-image url(public'images/logo_gear.png')
+    content ''
+
+  &::after
+    position absolute
+    left 51px
+    top 6px
+    width 207px
+    height 27px
+    background-image url(public'images/logo_sign.png')
+    content ''
+
+  &:hover
+    
+    &::before
+      transform rotate(360deg)
+
+.search
+  position absolute
+  right 26px
+  top 31px
+  width 20px  
+  height 27px
+
+.search_label
+  cursor pointer
+  position absolute
+  top 6px
+  right 0 
+  width 20px  
+  height 17px
+  background-image url(public'images/search_label.png')
+
+  &:hover
+    background-image url(public'images/search_label__hover.png')
+
+#search_show
+  display none
+
+  &:checked ~ .search_control
+    transform translate3d(0, 0, 0)
+    opacity 1
+
+  &:checked ~ .search_label
+    background-image url(public'images/search_label__focus.png')
+    
+
+.search_control
+  position absolute
+  right calc(100% + 12px)
+  top 0
+  transform translate3d(-20px, 0, 0)
+  opacity 0
+  transition all 0.3s ease
+
+  [type="text"]
+    outline none
+    border none
+    padding 0 5px
+    width 200px
+    height 28px
+    line-height 28px
+    font-size 14px
+    background-color alpha(black, 0.5)
+
+  &::after
+    position absolute
+    left 100%
+    top 7px
+    border 7px solid transparent
+    border-left-color alpha(black, 0.5) 
+    width 0
+    height 0
+    content ''

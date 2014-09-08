@@ -1,0 +1,19 @@
+m_clearfix() 
+
+  &::after 
+    content ''
+    display table
+    clear both
+
+m_inline-blocks(vertical_align = middle, font_size = 16px, line_height = normal) 
+  font-size 0
+  letter-spacing 0
+  line-height 0
+
+  & > *,
+  & > *::after,
+  & > *::before
+    display inline-block
+    vertical-align vertical_align
+    font-size font_size
+    line-height line_height

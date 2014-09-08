@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+  include ../includes/head
+body.page(data-role="page" class='page__'+page)
+  header.header
+    a.logo(data-init="data-init" href="/")
+    h1.page_header(data-init="data-init")
+      block page_header
+    include ../includes/search
+    nav.nav(data-init="data-init")
+      include ../includes/nav
+  .page_wrapper(data-init="data-init")
+    .page_container
+      block page_container
+  include ../includes/footer
+  script(src="public/js/vendor/jquery-1.10.2.min.js")
+  //script(src="https://code.jquery.com/jquery-2.1.1.min.js")
+  script(src="public/js/application.js")

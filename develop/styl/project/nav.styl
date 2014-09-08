@@ -1,0 +1,32 @@
+.nav 
+  m_inline-blocks(baseline)
+  position relative
+  z-index 1
+  text-align center
+
+
+.nav_item 
+  text-decoration none
+  color white
+
+  &::after,
+  &::before
+    position relative
+    top 3px
+    margin 0 12px
+    width 1px
+    height 16px
+    background-color white
+    content ''
+
+  &:hover
+    color blue
+
+  &.active 
+    color red
+
+  &:last-of-type::before,
+  &:last-of-type::after,
+  &:first-of-type::before,
+  &:first-of-type::after
+    display none
