@@ -3,7 +3,7 @@ var app = express();
 
 app.use('/public', express.static(__dirname + '/public'));
 
-app.set('port', (process.env.PORT || 5000))
+app.set('port', (process.env.PORT || 5000));
 app.set('views', './develop/jade');
 app.set('view engine', 'jade');
 
@@ -13,6 +13,14 @@ var server = app.listen(app.get('port'), function() {
 
 app.get('/', function (req, res) {
   res.render('index', { page: 'index' });
+})
+
+app.get('/brands', function (req, res) {
+  res.render('brands', { page: 'brands' });
+})
+
+app.get('/brands/id', function (req, res) {
+  res.render('brand', { page: 'brand' });
 })
 
 app.get('/team', function (req, res) {

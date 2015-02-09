@@ -1,5 +1,5 @@
 
-/* line 16 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/main.styl */
+/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/main.styl */
 
 /* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
@@ -431,13 +431,20 @@ html {
 }
 
 /* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+body.body__modal,
+html.body__modal {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
 body {
   font-size: 16px;
   font-family: 'Exo 2', sans-serif;
   color: #fff;
 }
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 27 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
 
 /* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
 
@@ -635,7 +642,7 @@ body {
        background-size: cover;
 }
 
-/* line 9 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 10 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
 .page_header {
   margin-bottom: 37px;
   padding-top: 32px;
@@ -645,21 +652,21 @@ body {
   text-align: center;
 }
 
-/* line 17 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
 .page_wrapper {
   padding: 140px 0 60px;
 }
 
-/* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 21 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
 .page_container {
   position: relative;
   z-index: 1;
   min-height: 100%;
 }
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
 
 /* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
 .header {
@@ -1020,9 +1027,46 @@ body {
   display: none;
 }
 
-/* line 32 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 34 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+.breadcrumbs {
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
 
-/* line 32 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+.breadcrumbs > *,
+.breadcrumbs > *::after,
+.breadcrumbs > *::before {
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* line 40 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+.breadcrumbs_item {
+  margin: 0 4px;
+}
+
+/* line 43 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+.breadcrumbs_link {
+  margin: 0 4px;
+  color: #f30;
+  text-decoration: none;
+}
+
+/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+.breadcrumbs_link:hover {
+  color: #3eb5f1;
+}
+
+/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+
+/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
 
 /* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
 .catalog-link {
@@ -1087,7 +1131,90 @@ body {
 
 /* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
 
-/* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+
+/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+  background: -moz-radial-gradient(center, ellipse, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease;
+     -moz-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+  z-index: 0;
+  text-align: center;
+  overflow: auto;
+}
+
+/* line 15 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper:after {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+  content: '';
+}
+
+/* line 22 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper.show {
+  z-index: 999;
+  opacity: 1;
+}
+
+/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper.show .modal_container {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+     -moz-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+/* line 31 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper.hidding {
+  opacity: 0;
+}
+
+/* line 34 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_wrapper.hidding .modal_container {
+  -webkit-transform: translate3d(0, 50px, 0);
+     -moz-transform: translate3d(0, 50px, 0);
+          transform: translate3d(0, 50px, 0);
+  opacity: 0;
+}
+
+/* line 38 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_container {
+  margin: 100px 0;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  -webkit-transform: translate3d(0, -50px, 0);
+     -moz-transform: translate3d(0, -50px, 0);
+          transform: translate3d(0, -50px, 0);
+  opacity: 0;
+  max-width: 60%;
+}
+
+/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+.modal_content {
+  background-color: #fff;
+  padding: 60px;
+}
+
+/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+
+/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
 
 /* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
 .page__index,
@@ -1319,4 +1446,203 @@ body {
   -webkit-transition: all 0.3s ease;
      -moz-transition: all 0.3s ease;
           transition: all 0.3s ease;
+}
+
+/* line 74 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+
+/* line 74 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands,
+.page__brand {
+  background-color: #e7e7e7;
+  color: #000;
+}
+
+/* line 6 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 9 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .header::before,
+.page__brand .header::before,
+.page__brands .footer::before,
+.page__brand .footer::before {
+  background-image: none;
+  background-color: #e7e7e7;
+}
+
+/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 15 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 17 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .header .logo::before,
+.page__brand .header .logo::before {
+  background-image: url("../images/logo_gear_black.png");
+}
+
+/* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .header .logo::after,
+.page__brand .header .logo::after {
+  background-image: url("../images/logo_sign_black.png");
+}
+
+/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .search_label,
+.page__brand .search_label {
+  background-image: url("../images/search_label_black.png");
+}
+
+/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 28 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .social__fb::after,
+.page__brand .social__fb::after {
+  background-image: url("../images/fb_black.png");
+}
+
+/* line 31 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 33 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .social__tw::after,
+.page__brand .social__tw::after {
+  background-image: url("../images/tw_black.png");
+}
+
+/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+
+/* line 38 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.page__brands .social__vk::after,
+.page__brand .social__vk::after {
+  background-image: url("../images/vk_black.png");
+}
+
+/* line 41 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brands_container {
+  width: 1160px;
+  margin: auto;
+}
+
+/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brands_item {
+  width: 250px;
+  margin-bottom: 52px;
+}
+
+/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brands_item img {
+  display: block;
+  width: 100%;
+}
+
+/* line 53 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand_container {
+  width: 1160px;
+  padding: 0;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+/* line 69 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand_item {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 52px;
+  margin: 0 15px 52px;
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 77 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand_item img {
+  max-height: 200px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* line 82 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand_item:hover {
+  color: #f30;
+}
+
+/* line 85 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brands_item_caption {
+  font-size: 18px;
+}
+
+/* line 88 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brands_item_price {
+  font-size: 24px;
+}
+
+/* line 91 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_left,
+.brand-show_right {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+/* line 97 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_left {
+  text-align: center;
+  padding-right: 25px;
+}
+
+/* line 101 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_right {
+  padding-left: 25px;
+}
+
+/* line 104 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_category {
+  margin-bottom: 7px;
+  color: #888;
+  font-size: 18px;
+}
+
+/* line 109 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_title {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #000;
+}
+
+/* line 114 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_picture {
+  margin-bottom: 20px;
+  width: 100%;
+  display: block;
+}
+
+/* line 119 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_price {
+  font-size: 36px;
+  color: #000;
+}
+
+/* line 123 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_chars {
+  font-size: 20px;
+}
+
+/* line 126 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_chars_item {
+  line-height: 25px;
+}
+
+/* line 129 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+.brand-show_chars_item::before {
+  content: '-';
+  margin-right: 5px;
 }
