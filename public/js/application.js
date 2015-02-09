@@ -12,7 +12,7 @@
 (function() {
   window.Modal = (function() {
     $(document).on('click', '[modal_show]', function() {
-      Modal.show($($(this).attr('content')));
+      Modal.show($($(this).attr('content')).html());
       return false;
     }).on('click', '[modal]', function() {
       return Modal.hide();
@@ -25,8 +25,8 @@
       }
     });
     return {
-      show: function($content) {
-        $('[modal]').find('[modal_content]').append($content).end().addClass('show');
+      show: function(html) {
+        $('[modal]').find('[modal_content]').html(html).end().addClass('show');
         return $('body').addClass('body__modal');
       },
       hide: function() {

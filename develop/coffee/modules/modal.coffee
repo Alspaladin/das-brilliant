@@ -1,7 +1,7 @@
 window.Modal = (->
   $(document)
   .on 'click', '[modal_show]', ->
-    Modal.show $ $(this).attr('content')
+    Modal.show $($(this).attr('content')).html()
     false
   .on 'click', '[modal]', ->
     Modal.hide()
@@ -12,10 +12,10 @@ window.Modal = (->
     if e.keyCode == 27 and $('[modal]').hasClass('show')
       Modal.hide()
 
-  show: ($content) ->
+  show: (html) ->
     $('[modal]')
     .find('[modal_content]')
-    .append($content)
+    .html(html)
     .end()
     .addClass('show')
     $('body').addClass('body__modal')
