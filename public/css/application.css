@@ -1,26 +1,26 @@
 
-/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/main.styl */
+/* line 18 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/main.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
-/* line 286 : /Users/arturstambulcan/Documents/das-brilliant/front/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+/* line 286 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 
-/* line 9 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 9 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* line 19 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 19 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 body {
   margin: 0;
 }
 
-/* line 32 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 32 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 article,
 aside,
 details,
@@ -36,7 +36,7 @@ summary {
   display: block;
 }
 
-/* line 52 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 52 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 audio,
 canvas,
 progress,
@@ -45,63 +45,63 @@ video {
   vertical-align: baseline; /* 2 */
 }
 
-/* line 65 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 65 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 75 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 75 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 [hidden],
 template {
   display: none;
 }
 
-/* line 87 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 87 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 a {
   background: transparent;
 }
 
-/* line 95 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 95 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 107 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 107 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 115 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 115 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 124 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 124 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 dfn {
   font-style: italic;
 }
 
-/* line 133 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 133 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 142 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 142 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 151 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 151 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 small {
   font-size: 80%;
 }
 
-/* line 159 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 159 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 sub,
 sup {
   font-size: 75%;
@@ -110,44 +110,44 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 167 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 167 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 sup {
   top: -0.5em;
 }
 
-/* line 171 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 171 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 sub {
   bottom: -0.25em;
 }
 
-/* line 182 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 182 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 img {
   border: 0;
 }
 
-/* line 190 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 190 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 201 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 201 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 figure {
   margin: 1em 40px;
 }
 
-/* line 209 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 209 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 219 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 219 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 pre {
   overflow: auto;
 }
 
-/* line 227 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 227 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 code,
 kbd,
 pre,
@@ -156,7 +156,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 250 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 250 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 input,
 optgroup,
@@ -167,18 +167,18 @@ textarea {
   margin: 0; /* 3 */
 }
 
-/* line 264 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 264 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button {
   overflow: visible;
 }
 
-/* line 275 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 275 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 select {
   text-transform: none;
 }
 
-/* line 288 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 288 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -187,25 +187,25 @@ input[type="submit"] {
   cursor: pointer; /* 3 */
 }
 
-/* line 300 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 300 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 309 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 309 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 320 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 320 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 input {
   line-height: normal;
 }
 
-/* line 332 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 332 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
@@ -213,65 +213,65 @@ input[type="radio"] {
   padding: 0; /* 2 */
 }
 
-/* line 344 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 344 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 355 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 355 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }
 
-/* line 368 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 368 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 377 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 377 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 388 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 388 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
 }
 
-/* line 397 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 397 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 textarea {
   overflow: auto;
 }
 
-/* line 406 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 406 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 optgroup {
   font-weight: bold;
 }
 
-/* line 417 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 417 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 422 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 422 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 td,
 th {
   padding: 0;
 }
 
-/* line 425 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/normalize.styl */
+/* line 425 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/normalize.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 
-/* line 6 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 6 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 html,
 body,
 div,
@@ -361,7 +361,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 27 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 27 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 article,
 aside,
 details,
@@ -376,24 +376,24 @@ section {
   display: block;
 }
 
-/* line 31 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 31 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 body {
   line-height: 1;
 }
 
-/* line 34 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 34 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 37 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 37 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 40 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 40 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -402,21 +402,21 @@ q:after {
   content: none;
 }
 
-/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 45 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/reset.styl */
+/* line 48 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/reset.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 
-/* line 19 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 19 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 
-/* line 2 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 2 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 
-/* line 5 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 5 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 * {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -424,58 +424,56 @@ table {
   text-rendering: optimizeSpeed;
 }
 
-/* line 17 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 17 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 body,
 html {
   height: 100%;
 }
 
-/* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 20 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 body.body__modal,
 html.body__modal {
   width: 100%;
   overflow: hidden;
 }
 
-/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 24 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 body {
   font-size: 16px;
   font-family: 'Exo 2', sans-serif;
   color: #fff;
 }
 
-/* line 27 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/theme.styl */
+/* line 27 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/theme.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 
-/* line 3 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 3 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 
-/* line 5 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 5 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .logo::before {
   -webkit-transform: rotate(-360deg);
      -moz-transform: rotate(-360deg);
       -ms-transform: rotate(-360deg);
           transform: rotate(-360deg);
   opacity: 0;
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-          transition: all 1s ease;
+  -moz-transition: all 1s ease;
+       transition: all 1s ease;
 }
 
-/* line 10 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 10 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .logo::after {
   -webkit-transform: translate3d(30px, 0, 0);
      -moz-transform: translate3d(30px, 0, 0);
           transform: translate3d(30px, 0, 0);
   opacity: 0;
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+       transition: all 0.5s ease;
 }
 
-/* line 15 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 15 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 
-/* line 17 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 17 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .logo.init::before {
   -webkit-transform: rotate(0);
      -moz-transform: rotate(0);
@@ -484,7 +482,7 @@ body {
   opacity: 1;
 }
 
-/* line 21 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 21 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .logo.init::after {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -492,7 +490,7 @@ body {
   opacity: 1;
 }
 
-/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 26 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .page_header {
   -webkit-transform: translate3d(0, -30px, 0);
      -moz-transform: translate3d(0, -30px, 0);
@@ -500,65 +498,60 @@ body {
   opacity: 0;
 }
 
-/* line 30 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 30 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .page_header.init {
-  -webkit-transition: all 0.5s ease 0.5s;
-     -moz-transition: all 0.5s ease 0.5s;
-          transition: all 0.5s ease 0.5s;
+  -moz-transition: all 0.5s ease 0.5s;
+       transition: all 0.5s ease 0.5s;
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 
-/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 36 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .nav_item,
 .nav_item::before,
 .nav_item::after {
   opacity: 0;
 }
 
-/* line 41 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 41 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item {
   opacity: 1;
 }
 
-/* line 44 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 44 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item::before,
 .init .nav_item::after {
   opacity: 1;
 }
 
-/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 48 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(1) {
-  -webkit-transition: opacity 0.5s ease 1s;
-     -moz-transition: opacity 0.5s ease 1s;
-          transition: opacity 0.5s ease 1s;
+  -moz-transition: opacity 0.5s ease 1s;
+       transition: opacity 0.5s ease 1s;
 }
 
-/* line 51 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 51 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(2) {
-  -webkit-transition: opacity 0.5s ease 1.25s;
-     -moz-transition: opacity 0.5s ease 1.25s;
-          transition: opacity 0.5s ease 1.25s;
+  -moz-transition: opacity 0.5s ease 1.25s;
+       transition: opacity 0.5s ease 1.25s;
 }
 
-/* line 54 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 54 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(2)::before,
 .init .nav_item:nth-of-type(2)::after {
-  -webkit-transition: all 0.5s ease 1.75s;
-     -moz-transition: all 0.5s ease 1.75s;
-          transition: all 0.5s ease 1.75s;
+  -moz-transition: all 0.5s ease 1.75s;
+       transition: all 0.5s ease 1.75s;
 }
 
-/* line 58 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 58 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(3) {
-  -webkit-transition: opacity 0.5s ease 1.5s;
-     -moz-transition: opacity 0.5s ease 1.5s;
-          transition: opacity 0.5s ease 1.5s;
+  -moz-transition: opacity 0.5s ease 1.5s;
+       transition: opacity 0.5s ease 1.5s;
 }
 
-/* line 62 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 62 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .search {
   -webkit-transform: translate3d(30px, 0, 0);
      -moz-transform: translate3d(30px, 0, 0);
@@ -566,18 +559,17 @@ body {
   opacity: 0;
 }
 
-/* line 66 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 66 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .search.init {
-  -webkit-transition: all 0.5s ease 0.5s;
-     -moz-transition: all 0.5s ease 0.5s;
-          transition: all 0.5s ease 0.5s;
+  -moz-transition: all 0.5s ease 0.5s;
+       transition: all 0.5s ease 0.5s;
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 
-/* line 72 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 72 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .social {
   -webkit-transform: translate3d(0, 30px, 0);
      -moz-transform: translate3d(0, 30px, 0);
@@ -585,7 +577,7 @@ body {
   opacity: 0;
 }
 
-/* line 76 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 76 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .social {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -593,45 +585,41 @@ body {
   opacity: 1;
 }
 
-/* line 80 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 80 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(1) {
-  -webkit-transition: all 0.5s ease 1s;
-     -moz-transition: all 0.5s ease 1s;
-          transition: all 0.5s ease 1s;
+  -moz-transition: all 0.5s ease 1s;
+       transition: all 0.5s ease 1s;
 }
 
-/* line 83 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 83 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(2) {
-  -webkit-transition: all 0.5s ease 1.25s;
-     -moz-transition: all 0.5s ease 1.25s;
-          transition: all 0.5s ease 1.25s;
+  -moz-transition: all 0.5s ease 1.25s;
+       transition: all 0.5s ease 1.25s;
 }
 
-/* line 86 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 86 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(3) {
-  -webkit-transition: all 0.5s ease 1.5s;
-     -moz-transition: all 0.5s ease 1.5s;
-          transition: all 0.5s ease 1.5s;
+  -moz-transition: all 0.5s ease 1.5s;
+       transition: all 0.5s ease 1.5s;
 }
 
-/* line 89 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 89 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .page_wrapper {
   opacity: 0;
 }
 
-/* line 92 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 92 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 .page_wrapper.init {
   opacity: 1;
-  -webkit-transition: all 1.5s ease 1.75s;
-     -moz-transition: all 1.5s ease 1.75s;
-          transition: all 1.5s ease 1.75s;
+  -moz-transition: all 1.5s ease 1.75s;
+       transition: all 1.5s ease 1.75s;
 }
 
-/* line 94 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/base/init.styl */
+/* line 94 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/base/init.styl */
 
-/* line 94 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 94 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 .page {
   margin: 0 auto;
   width: 100%;
@@ -642,7 +630,7 @@ body {
        background-size: cover;
 }
 
-/* line 10 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 10 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 .page_header {
   margin-bottom: 37px;
   padding-top: 32px;
@@ -652,23 +640,23 @@ body {
   text-align: center;
 }
 
-/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 18 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 .page_wrapper {
   padding: 140px 0 60px;
 }
 
-/* line 21 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 21 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 .page_container {
   position: relative;
   z-index: 1;
   min-height: 100%;
 }
 
-/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/page.styl */
+/* line 24 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/page.styl */
 
-/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 24 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .header {
   overflow: hidden;
   position: fixed;
@@ -677,7 +665,7 @@ body {
   height: 160px;
 }
 
-/* line 8 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 8 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .header::before {
   position: absolute;
   left: 0;
@@ -690,7 +678,7 @@ body {
   content: '';
 }
 
-/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 18 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .logo {
   display: block;
   position: absolute;
@@ -701,7 +689,7 @@ body {
   height: 40px;
 }
 
-/* line 27 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 27 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .logo::before {
   position: absolute;
   left: 0;
@@ -712,7 +700,7 @@ body {
   content: '';
 }
 
-/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 36 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .logo::after {
   position: absolute;
   left: 51px;
@@ -723,9 +711,9 @@ body {
   content: '';
 }
 
-/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 45 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 
-/* line 47 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 47 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .logo:hover::before {
   -webkit-transform: rotate(360deg);
      -moz-transform: rotate(360deg);
@@ -733,7 +721,7 @@ body {
           transform: rotate(360deg);
 }
 
-/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 50 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search {
   position: absolute;
   right: 26px;
@@ -742,7 +730,7 @@ body {
   height: 27px;
 }
 
-/* line 57 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 57 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search_label {
   cursor: pointer;
   position: absolute;
@@ -753,17 +741,17 @@ body {
   background-image: url("../images/search_label.png");
 }
 
-/* line 66 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 66 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search_label:hover {
   background-image: url("../images/search_label__hover.png");
 }
 
-/* line 69 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 69 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 #search_show {
   display: none;
 }
 
-/* line 72 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 72 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 #search_show:checked ~ .search_control {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -771,15 +759,14 @@ body {
   opacity: 1;
 }
 
-/* line 76 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 76 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 #search_show:checked ~ .search_label {
   background-image: url("../images/search_label__focus.png");
 }
 
-/* line 80 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 80 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search_control {
   position: absolute;
-  right: -webkit-calc(100% + 12px);
   right: -moz-calc(100% + 12px);
   right: calc(100% + 12px);
   top: 0;
@@ -787,12 +774,11 @@ body {
      -moz-transform: translate3d(-20px, 0, 0);
           transform: translate3d(-20px, 0, 0);
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
-/* line 88 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 88 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search_control [type="text"] {
   outline: none;
   border: none;
@@ -804,7 +790,7 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
-/* line 98 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 98 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 .search_control::after {
   position: absolute;
   left: 100%;
@@ -816,11 +802,11 @@ body {
   content: '';
 }
 
-/* line 106 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/header.styl */
+/* line 106 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/header.styl */
 
-/* line 106 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 106 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .footer {
   font-size: 0;
   letter-spacing: 0;
@@ -836,7 +822,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 .footer > *,
 .footer > *::after,
 .footer > *::before {
@@ -846,7 +832,7 @@ body {
   line-height: normal;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .footer::before {
   position: absolute;
   left: 0;
@@ -859,14 +845,14 @@ body {
   content: '';
 }
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 23 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .socials {
   font-size: 0;
   letter-spacing: 0;
   line-height: 0;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 .socials > *,
 .socials > *::after,
 .socials > *::before {
@@ -876,13 +862,13 @@ body {
   line-height: normal;
 }
 
-/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 26 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social {
   position: relative;
   margin: 0 36px;
 }
 
-/* line 30 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 30 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social::before,
 .social::after {
   display: block;
@@ -892,86 +878,85 @@ body {
   width: 100%;
   height: 100%;
   content: '';
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
-/* line 41 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 41 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social::before {
   opacity: 0;
 }
 
-/* line 44 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 44 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social::after {
   opacity: 1;
 }
 
-/* line 47 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 47 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 49 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social:hover::before {
   opacity: 1;
 }
 
-/* line 52 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 52 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social:hover::after {
   opacity: 0;
 }
 
-/* line 55 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 55 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__fb {
   width: 10px;
   height: 19px;
 }
 
-/* line 59 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 59 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__fb::before {
   background-image: url("../images/fb__hover.png");
 }
 
-/* line 62 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 62 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__fb::after {
   background-image: url("../images/fb.png");
 }
 
-/* line 65 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 65 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__tw {
   width: 27px;
   height: 19px;
 }
 
-/* line 69 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 69 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__tw::before {
   background-image: url("../images/tw__hover.png");
 }
 
-/* line 72 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 72 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__tw::after {
   background-image: url("../images/tw.png");
 }
 
-/* line 75 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 75 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__vk {
   width: 27px;
   height: 15px;
 }
 
-/* line 79 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 79 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__vk::before {
   background-image: url("../images/vk__hover.png");
 }
 
-/* line 82 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 82 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 .social__vk::after {
   background-image: url("../images/vk.png");
 }
 
-/* line 83 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/footer.styl */
+/* line 83 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 83 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 83 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav {
   font-size: 0;
   letter-spacing: 0;
@@ -981,7 +966,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 .nav > *,
 .nav > *::after,
 .nav > *::before {
@@ -991,13 +976,13 @@ body {
   line-height: normal;
 }
 
-/* line 8 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 8 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav_item {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 12 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 12 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav_item::after,
 .nav_item::before {
   position: relative;
@@ -1009,17 +994,17 @@ body {
   content: '';
 }
 
-/* line 22 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 22 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav_item:hover {
   color: #3eb5f1;
 }
 
-/* line 25 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 25 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav_item.active {
   color: #f30;
 }
 
-/* line 28 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 28 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .nav_item:last-of-type::before,
 .nav_item:last-of-type::after,
 .nav_item:first-of-type::before,
@@ -1027,7 +1012,7 @@ body {
   display: none;
 }
 
-/* line 34 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 34 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs {
   font-size: 0;
   letter-spacing: 0;
@@ -1037,7 +1022,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 .breadcrumbs > *,
 .breadcrumbs > *::after,
 .breadcrumbs > *::before {
@@ -1047,28 +1032,28 @@ body {
   line-height: normal;
 }
 
-/* line 40 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 40 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_item {
   margin: 0 4px;
 }
 
-/* line 43 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 43 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_link {
   margin: 0 4px;
   color: #f30;
   text-decoration: none;
 }
 
-/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 48 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_link:hover {
   color: #3eb5f1;
 }
 
-/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/nav.styl */
+/* line 49 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/nav.styl */
 
-/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 49 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link {
   display: inline-block;
   position: relative;
@@ -1083,7 +1068,7 @@ body {
   background-color: rgba(0,0,0,0.75);
 }
 
-/* line 14 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 14 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link::before {
   display: block;
   position: absolute;
@@ -1096,12 +1081,11 @@ body {
   height: 100%;
   background-color: #fff;
   content: '';
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+       transition: all 0.5s ease;
 }
 
-/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 26 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link::after {
   position: absolute;
   left: 0;
@@ -1110,30 +1094,29 @@ body {
   height: 100%;
   color: #fff;
   content: 'Перейти в галерею';
-  -webkit-transition: all 0.4s ease;
-     -moz-transition: all 0.4s ease;
-          transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+       transition: all 0.4s ease;
 }
 
-/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 36 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 38 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 38 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link:hover::before {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-/* line 41 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 41 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link:hover::after {
   color: #000;
 }
 
-/* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/catalog.styl */
+/* line 42 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 42 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper {
   display: block;
   position: fixed;
@@ -1141,19 +1124,17 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
   background: -moz-radial-gradient(center, ellipse, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
   background: radial-gradient(ellipse at center, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease;
-     -moz-transition: opacity 0.5s ease;
-          transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+       transition: opacity 0.5s ease;
   z-index: 0;
   text-align: center;
   overflow: auto;
 }
 
-/* line 15 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 15 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper:after {
   display: inline-block;
   vertical-align: middle;
@@ -1162,29 +1143,28 @@ body {
   content: '';
 }
 
-/* line 22 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 22 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.show {
   z-index: 999;
   opacity: 1;
 }
 
-/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 26 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.show .modal_container {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-          transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+       transition: all 0.5s ease;
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   opacity: 1;
 }
 
-/* line 31 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 31 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.hidding {
   opacity: 0;
 }
 
-/* line 34 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 34 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.hidding .modal_container {
   -webkit-transform: translate3d(0, 50px, 0);
      -moz-transform: translate3d(0, 50px, 0);
@@ -1192,7 +1172,7 @@ body {
   opacity: 0;
 }
 
-/* line 38 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 38 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_container {
   margin: 100px 0;
   position: relative;
@@ -1206,34 +1186,34 @@ body {
   max-width: 60%;
 }
 
-/* line 48 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 48 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 .modal_content {
   background-color: #fff;
   padding: 60px;
 }
 
-/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/project/modal.styl */
+/* line 50 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/project/modal.styl */
 
-/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 50 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .page__index,
 .header::before,
 .footer::before {
   background-image: url("..//images/bg_index.jpg");
 }
 
-/* line 7 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 7 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .nav {
   margin-bottom: 73px;
 }
 
-/* line 10 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 10 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .page_container {
   padding-top: 51px;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .index_text {
   width: 387px;
   margin: 0 auto 190px;
@@ -1242,79 +1222,79 @@ body {
   font-size: 18px;
 }
 
-/* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 20 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .index_text span {
   font-weight: 600;
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 24 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 24 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 .index_catalog-link {
   text-align: center;
 }
 
-/* line 25 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/index.styl */
+/* line 25 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/index.styl */
 
-/* line 25 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 25 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 3 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 3 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts,
 .page__contacts .header::before,
 .page__contacts .footer::before {
   background-image: url("../images/bg_contacts.jpg");
 }
 
-/* line 8 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 8 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts .nav {
   margin-bottom: 73px;
 }
 
-/* line 11 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 11 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts .page_container {
   padding-top: 51px;
 }
 
-/* line 14 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 14 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts-sections {
   width: 600px;
   margin: 0 auto;
 }
 
-/* line 18 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 18 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section {
   font-family: 'Didact Gothic', sans-serif;
   line-height: 21px;
   font-size: 18px;
 }
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 23 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(1) {
   margin-bottom: 40px;
   border-bottom: 1px solid #fff;
   padding: 0 135px 40px;
 }
 
-/* line 28 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 28 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(2) {
   margin: 0 76px 40px;
   border-bottom: 1px solid #fff;
   padding: 0 90px 40px;
 }
 
-/* line 33 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 33 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(2) span {
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 36 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) {
   text-align: center;
   line-height: 24px;
 }
 
-/* line 40 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 40 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) a,
 .contacts_section:nth-of-type(3) span {
   text-decoration: none;
@@ -1322,48 +1302,48 @@ body {
   color: #fff;
 }
 
-/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 45 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) a:hover {
   text-decoration: underline;
 }
 
-/* line 46 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/contacts.styl */
+/* line 46 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 46 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 46 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 3 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 3 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .page__team,
 .page__team .header::before,
 .page__team .footer::before {
   background-image: url("../images/bg_team.jpg");
 }
 
-/* line 8 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 8 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .page__team .nav {
   margin-bottom: 73px;
 }
 
-/* line 11 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 11 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .page__team .page_container {
   padding-top: 51px;
 }
 
-/* line 14 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 14 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team_container {
   margin: auto;
   width: 1081px;
 }
 
-/* line 3 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/foundation/mixins.styl */
+/* line 3 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/foundation/mixins.styl */
 .team_container::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 19 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 19 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item {
   position: relative;
   float: left;
@@ -1374,7 +1354,7 @@ body {
   background-color: #fff;
 }
 
-/* line 28 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 28 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item::before {
   position: absolute;
   opacity: 0;
@@ -1384,29 +1364,28 @@ body {
   height: 100%;
   background-color: rgba(0,0,0,0.75);
   content: '';
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
-/* line 39 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 39 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item:not(:nth-of-type(4n)) {
   margin-right: 27px;
 }
 
-/* line 42 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 42 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item:nth-last-of-type(4 - n) {
   margin-bottom: 0;
 }
 
-/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 45 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 47 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 47 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item:hover::before {
   opacity: 1;
 }
 
-/* line 50 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 50 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item:hover .team-item_name,
 .team-item:hover .team-item_profession {
   opacity: 1;
@@ -1415,7 +1394,7 @@ body {
           transform: translate3d(0, 0, 0);
 }
 
-/* line 55 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 55 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item_name {
   position: relative;
   z-index: 2;
@@ -1427,12 +1406,11 @@ body {
   font-size: 24px;
   font-weight: 300;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
-/* line 66 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 66 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 .team-item_profession {
   position: relative;
   z-index: 2;
@@ -1443,25 +1421,24 @@ body {
   font-size: 14px;
   font-weight: 300;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-     -moz-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+       transition: all 0.3s ease;
 }
 
-/* line 74 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/team.styl */
+/* line 74 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 74 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 74 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 1 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 1 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands,
 .page__brand {
   background-color: #e7e7e7;
   color: #000;
 }
 
-/* line 6 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 6 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 9 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 9 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header::before,
 .page__brand .header::before,
 .page__brands .footer::before,
@@ -1470,90 +1447,88 @@ body {
   background-color: #e7e7e7;
 }
 
-/* line 13 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 13 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 15 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 15 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 17 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 17 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header .logo::before,
 .page__brand .header .logo::before {
   background-image: url("../images/logo_gear_black.png");
 }
 
-/* line 20 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 20 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header .logo::after,
 .page__brand .header .logo::after {
   background-image: url("../images/logo_sign_black.png");
 }
 
-/* line 23 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 23 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .search_label,
 .page__brand .search_label {
   background-image: url("../images/search_label_black.png");
 }
 
-/* line 26 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 26 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 28 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 28 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__fb::after,
 .page__brand .social__fb::after {
   background-image: url("../images/fb_black.png");
 }
 
-/* line 31 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 31 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 33 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 33 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__tw::after,
 .page__brand .social__tw::after {
   background-image: url("../images/tw_black.png");
 }
 
-/* line 36 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 36 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 38 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 38 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__vk::after,
 .page__brand .social__vk::after {
   background-image: url("../images/vk_black.png");
 }
 
-/* line 41 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 41 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brands_container {
   width: 1160px;
   margin: auto;
 }
 
-/* line 45 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 45 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item {
   width: 250px;
   margin-bottom: 52px;
 }
 
-/* line 49 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 49 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item img {
   display: block;
   width: 100%;
 }
 
-/* line 53 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 53 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand_container {
   width: 1160px;
   padding: 0;
   margin: auto;
   list-style: none;
-  display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-/* line 69 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 69 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item {
   color: #fff;
   text-align: left;
@@ -1563,29 +1538,29 @@ body {
   color: #000;
 }
 
-/* line 77 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 77 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item img {
   max-height: 200px;
   margin-bottom: 6px;
   display: block;
 }
 
-/* line 82 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 82 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item:hover {
   color: #f30;
 }
 
-/* line 85 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 85 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_caption {
   font-size: 18px;
 }
 
-/* line 88 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 88 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_price {
   font-size: 24px;
 }
 
-/* line 91 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 91 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left,
 .brand-show_right {
   display: inline-block;
@@ -1593,55 +1568,55 @@ body {
   width: 50%;
 }
 
-/* line 97 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 97 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left {
   text-align: center;
   padding-right: 25px;
 }
 
-/* line 101 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 101 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_right {
   padding-left: 25px;
 }
 
-/* line 104 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 104 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_category {
   margin-bottom: 7px;
   color: #888;
   font-size: 18px;
 }
 
-/* line 109 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 109 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_title {
   margin-bottom: 20px;
   font-size: 36px;
   color: #000;
 }
 
-/* line 114 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 114 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_picture {
   margin-bottom: 20px;
   width: 100%;
   display: block;
 }
 
-/* line 119 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 119 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_price {
   font-size: 36px;
   color: #000;
 }
 
-/* line 123 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 123 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars {
   font-size: 20px;
 }
 
-/* line 126 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 126 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item {
   line-height: 25px;
 }
 
-/* line 129 : /Users/arturstambulcan/Documents/das-brilliant/front/develop/styl/pages/brands.styl */
+/* line 129 : /Users/alexandersvinin/Documents/Projects/db/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item::before {
   content: '-';
   margin-right: 5px;
