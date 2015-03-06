@@ -164,37 +164,13 @@ app.get('/products/image/:id',function(req, res, next){
                       //
                        
                         var cursor = attributes_values.find({"product_id":new ObjectID(req.params.id)},{name:1,key_id:1},{safe:true});
-                      cursor.each(function(e,arr){
-                                  
-                                        if(!e || arr == null){
-                                      
-                                     if(arr){
-                                     
-                                      var key_id = arr['key_id'];
-                                      }
-                                      attributes_keys.findOne({"_id":new ObjectID(key_id)},{name:1},function(e,key){
-                                        if(arr && key){
-                                        item["attributes_values"].push({"key":key.name,"value":arr.name});
-                                      }else{
-                                        
-                                        //db.close();
-                                        res.send(item);
-                                        //res.end();
-                                      }
-                                      });
 
-                                      }
-                                   // }
-
-
-
-                      });
-                     
+                        cursor.toArray(function(e,attrs){
+                          getProductAttributes(0,item,attrs,attributes_values,attributes_keys,res);
+                        });        
             });
 
       });
-
-
 
 
 
@@ -209,6 +185,28 @@ app.get('/products/image/:id',function(req, res, next){
 
 
 }
+
+
+function getProductAttributes(count,item,attrs,attributes_values,attributes_keys,res)
+{
+  var arr = attrs[count];
+  attributes_keys.findOne({"_id":new ObjectID(arr['key_id'])},{name:1},{lock:true},function(e,key)
+  {
+    item["attributes_values"].push({"key":key.name,"value":arr.name});
+    if(count == (attrs.length - 1))
+    { 
+      res.send(item);
+    }
+    else
+    {
+      count++;
+     getProductAttributes(count,item,attrs,attributes_values,attributes_keys,res); 
+    }
+
+
+  });
+}
+
 
 
  function getProductSearch(req, res, next) {
@@ -238,7 +236,7 @@ app.get('/products/image/:id',function(req, res, next){
       }
 
     var query = new String(req.query.query);
-    var resut = {"brands":[],"products":[]};
+    var resut = {"brands":[],"products":[],"good":0};
     if(query.length >= 2){
     var brandSeach = brand.find({'name':new RegExp(query,'i')}).toArray(function(e,bs){
 
@@ -250,71 +248,18 @@ app.get('/products/image/:id',function(req, res, next){
       searchParam.push({"name":new RegExp(query,'i')});
       resut.brands = bs;
 
-
+      options['lock'] = true;
 
   
     var prod = products.find({"$or":searchParam}, { _id: 1, brand_id: 1,price:1,name:1,type:1,category_id:1 },options);
     var results = [];
 
-
-      prod.each(function(err,item){
-
-       if(item == null){
-          res.send(resut);
-       }else{
-       
-       resut['products'].push(item);
-      item["attributes_values"] = [];
-
-
-  
-
-      brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},function(e,brandFind){
-            item['brand'] = brandFind.name;
-
-            categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat){
-                        item['category'] = cat.name;
-                      //
-                       
-                        var cursor = attributes_values.find({"product_id":new ObjectID(req.params.id)},{name:1,key_id:1},{safe:true});
-                      cursor.each(function(e,arr){
-                                  
-                                        if(!e || arr == null){
-                                      
-                                     if(arr){
-                                     
-                                      var key_id = arr['key_id'];
-                                      }
-                                      attributes_keys.findOne({"_id":new ObjectID(key_id)},{name:1},function(e,key){
-                                        if(arr && key){
-                                        item["attributes_values"].push({"key":key.name,"value":arr.name});
-                                      }else{
-                                        
-                                        //db.close();
-                                      
-                                        //res.end();
-                                      }
-                                      });
-
-                                      }
-                                   // }
-
-
-
-                      });
-                     
-            });
-
-      });
-
-
-}
-
-
+   
+      prod.toArray(function(err,items)
+      {
+          finding(items,resut,brand,attributes_values,attributes_keys,categories,false,res);
     });
    
-
-
 
     }); 
 
@@ -328,6 +273,68 @@ app.get('/products/image/:id',function(req, res, next){
 });
 
 }
+
+
+
+
+function getAttributesSearch(count,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res)
+{
+  var arr = attrs[count];
+  attributes_keys.findOne({"_id":new ObjectID(arr['key_id'])},{name:1},{lock:true},function(e,key)
+  {
+    item["attributes_values"].push({"key":key.name,"value":arr.name});
+    if(count == (attrs.length - 1))
+    {
+      resut['products'].push(item); 
+      if(resut.good == (items.length - 1)){
+        res.send(resut);
+      }
+      else{
+          resut.good += 1;
+          finding(items,resut,brand,attributes_values,attributes_keys,categories,end,res);
+      }
+    }
+    else
+    {
+      count++;
+     getAttributesSearch(count,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res); 
+    }
+
+
+  });
+}
+
+
+
+function finding(items,resut,brand,attributes_values,attributes_keys,categories,end,res)
+{
+  var item = items[resut.good];
+            if(!item['attributes_values']){
+                item['attributes_values'] = [];
+              }
+      brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},{lock:true},function(e,brandFind)
+      {
+        item['brand'] = brandFind.name;
+        categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat)
+        {
+          item['category'] = cat.name;
+                      
+          var cursor = attributes_values.find({"product_id":new ObjectID(item['_id'])},{name:1,key_id:1},{lock:true});
+          
+          cursor.toArray(function(e,attrs){
+            getAttributesSearch(0,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res);
+          });
+
+                     
+        });
+
+      });
+
+
+}
+
+         
+
 
 
 
@@ -355,73 +362,24 @@ app.get('/products/image/:id',function(req, res, next){
     var attributes_values = crystal.collection("attributes_values");
     var attributes_keys = crystal.collection("attributes_keys");
     var categories = crystal.collection("categories");
-    var brand = crystal.collection("brands");
-    var ended = false;    
+    var brand = crystal.collection("brands");    
 
+      var options = {};
 
-
-  
-    var prod = products.find({"brand_id" : new ObjectID(req.params.id)}, { _id: 1, brand_id: 1,price:1,name:1,type:1,category_id:1 });
-    var results = [];
-
-
-      prod.each(function(err,item){
-
-       if(item == null){
-          res.send(results);
-       }else{
-       
-       results.push(item);
-      item["attributes_values"] = [];
-
+      if(req.query.limit){
+        options['limit'] = parseInt(req.query.limit);
+      }
+      if(req.query.skip){
+        options['skip'] = parseInt(req.query.skip);
+      }
 
   
-
-      brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},function(e,brandFind){
-            item['brand'] = brandFind.name;
-
-            categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat){
-                        item['category'] = cat.name;
-                      //
-                       
-                        var cursor = attributes_values.find({"product_id":new ObjectID(req.params.id)},{name:1,key_id:1},{safe:true});
-                      cursor.each(function(e,arr){
-                                  
-                                        if(!e || arr == null){
-                                      
-                                     if(arr){
-                                     
-                                      var key_id = arr['key_id'];
-                                      }
-                                      attributes_keys.findOne({"_id":new ObjectID(key_id)},{name:1},function(e,key){
-                                        if(arr && key){
-                                        item["attributes_values"].push({"key":key.name,"value":arr.name});
-                                      }else{
-                                        
-                                        //db.close();
-                                      
-                                        //res.end();
-                                      }
-                                      });
-
-                                      }
-                                   // }
-
-
-
-                      });
-                     
-            });
-
-      });
-
-
-}
-
-
-    });
-   
-
+    var prod = products.find({"brand_id" : new ObjectID(req.params.id)}, { _id: 1, brand_id: 1,price:1,name:1,type:1,category_id:1 },options);
+    var resut = {"products":[],"good":0};
+     prod.toArray(function(err,items)
+      {
+          finding(items,resut,brand,attributes_values,attributes_keys,categories,false,res);
+    });  
 
 
 
