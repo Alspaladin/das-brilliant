@@ -1,0 +1,8 @@
+{
+    "dev" : {
+        "url" : "http://dasbrilliant.com:3001"
+    },
+    "staging" : {
+        "url" : "http://dasbrilliant.com:80"
+    }
+}
