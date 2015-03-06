@@ -152,7 +152,7 @@ app.get('/products/image/:id',function(req, res, next){
   
 
       brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},function(e,brandFind){
-            item['brand'] = brandFind.name;
+            if(brandFind) item['brand'] = brandFind.name;
 
             categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat){
                         item['category'] = cat.name;
@@ -309,7 +309,7 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
               }
       brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},{lock:true},function(e,brandFind)
       {
-        item['brand'] = brandFind.name;
+        if(brandFind) item['brand'] = brandFind.name;
         categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat)
         {
           item['category'] = cat.name;
