@@ -13,16 +13,21 @@ window.Modal = (->
       Modal.hide()
 
   show: (html) ->
+    $('body').css("overflow","hidden")
+    $('.modal_wrapper').mousewheel()
+    $('.modal_content').focus()
     $('[modal]')
     .find('[modal_content]')
     .html(html)
     .end()
-    .addClass('show')
+    .addClass('show').focus()
     $('body').addClass('body__modal')
   hide: ->
+    
     $('[modal]').addClass('hidding')
     setTimeout ->
       $('body').removeClass('body__modal')
       $('[modal]').removeClass('show hidding')
+      $('body').css("overflow","auto")
     , 1000  
 )()

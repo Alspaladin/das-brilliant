@@ -1,0 +1,15 @@
+script(type="text/x-handlebars-template" template="order")
+  .cart-title Оставьте контактную информацию
+  .order-info
+    input(type="text" placeholder="Введите имя").form_text#order_name
+    input(type="text" placeholder="Введите номер мобильного телефона").form_text#order_phone
+    input(type="text" placeholder="Введите E-mail").form_text#order_email
+    textarea(placeholder="Введите адрес доставки" rows="5").form_text#order_adress
+
+    .cart_error
+
+
+
+    p.center-button
+     button.send-order.button(ident= "") Отправить
+

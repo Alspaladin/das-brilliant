@@ -1,0 +1,32 @@
+script(type="text/x-handlebars-template" template="cart")
+  .cart-title Ваши покупки
+  .cart-no Корзина пуста
+  .cart-products
+    {{#each all}}
+    .cart-product
+      .cart-image
+        img(src="http://dasbrilliant.com/products/image/{{this.id}}" height="100px")
+      .cart-info-block
+        .cart-category {{this.category}}
+        .cart-name {{this.name}}
+      .cart-col
+        .cart-col-name Колличество
+        .cart-col-info
+          .cart-decrement(ident= "{{this.id}}") -
+          .cart-num {{this.col}}
+          .cart-increment(ident= "{{this.id}}") +
+      .cart-price
+        .cart-price-name Цена
+        .cart-price-value {{this.price}} P
+    div(style="clear:both;")
+
+    {{/each}}
+    .cart-result
+      .cart-result-name Итого
+      .cart-result-value 68490.00 р
+    div(style="clear:both;")
+
+
+  p.center-button
+    button.create-order.button(ident= "{{this.id}}") Оформить заказ
+

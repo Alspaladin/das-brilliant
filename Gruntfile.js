@@ -27,33 +27,22 @@ module.exports = function(grunt) {
       }
     },
 
-    jade: {
-      dev: {
-        options: {
-          pretty: true
-        },
-        files: [{
-          expand: true,
-          cwd: '<%= develop %>/jade',
-          src: ['*.jade'],
-          dest: 'application',
-          ext: '.html'
-        }]
-      }
-    },
-
     coffee: {
       dev: {
         files: {
-          '<%= stat %>/js/application.js': ['<%= develop %>/coffee/modules/*.coffee', '<%= develop %>/coffee/*.coffee']
+          '<%= stat %>/js/application.js': [
+            '<%= develop %>/coffee/settings.coffee', 
+            '<%= develop %>/coffee/modules/*.coffee', 
+            '<%= develop %>/coffee/document.coffee'
+          ]
         }
       }
     },
 
     watch: {
       dev: {
-        files: ['<%= develop %>/**/*.coffee', '<%= develop %>/**/*.styl', '<%= develop %>/**/*.jade'],
-        tasks: ['stylus:dev', 'autoprefixer:dev', 'jade:dev', 'coffee:dev']
+        files: ['<%= develop %>/**/*.coffee', '<%= develop %>/**/*.styl'],
+        tasks: ['stylus:dev', 'autoprefixer:dev', 'coffee:dev']
       }
     }
   });
@@ -64,5 +53,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
-  grunt.registerTask('dev', ['stylus:dev', 'autoprefixer:dev', 'jade:dev', 'coffee:dev', 'watch:dev']);
+  grunt.registerTask('dev', ['stylus:dev', 'autoprefixer:dev', 'coffee:dev', 'watch:dev']);
 };

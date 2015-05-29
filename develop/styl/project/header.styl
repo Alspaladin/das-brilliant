@@ -46,7 +46,7 @@
     
     &::before
       transform rotate(360deg)
-
+    
 .search
   position absolute
   right 26px
@@ -58,7 +58,7 @@
   cursor pointer
   position absolute
   top 6px
-  right 0 
+  right 45px 
   width 20px  
   height 17px
   background-image url(public'images/search_label.png')
@@ -79,7 +79,7 @@
 
 .search_control
   position absolute
-  right calc(100% + 12px)
+  right calc(100% + 57px)
   top 0
   transform translate3d(-20px, 0, 0)
   opacity 0
@@ -104,3 +104,38 @@
     width 0
     height 0
     content ''
+
+
+
+.cart-info
+  background-image url("../images/cart-white.svg")
+  position relative
+  top 4px
+  cursor pointer 
+  width 20px
+  height 20px
+  
+.cart-number
+  border-radius 100px
+  background-color #ff3300
+  position absolute
+  font-size 14px
+  padding-top 2px
+  padding-right 5px
+  padding-bottom 2px
+  padding-left 5px
+  top -6px
+  left 12px
+  color #fff
+  cursor pointer
+  
+.page__brands .cart-info,
+.page__brand .cart-info
+  background-image url("../images/cart.svg")
+  
+.page__brands .cart-number,
+.page__brand .cart-number
+    color #000
+
+
+  

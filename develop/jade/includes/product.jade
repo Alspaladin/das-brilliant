@@ -1,0 +1,15 @@
+script(type="text/x-handlebars-template" template="product")
+  .brand-show
+    .brand-show_category {{category}}
+    .brand-show_title {{name}}
+    .brand-show_left
+      img.brand-show_picture(src="http://dasbrilliant.com/products/image/{{_id}}")
+      .brand-show_price {{price}} P
+    .brand-show_right
+      ul.brand-show_chars
+        {{#each attributes_values}}
+        li.brand-show_chars_item {{key}} &ndash; {{value}}
+        {{/each}}
+  p.center-button
+    button.cart-add.button В корзину
+

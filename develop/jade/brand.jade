@@ -4,64 +4,6 @@ block page_header
   = 'Нам нравятся наши товары. Вам тоже понравятся!'
 
 block page_container
-  .brand_container
-    a.brand_item(href="#" modal_show content="#brand")
-      img(src="/public/pic/gag1.png")
-      .brands_item_caption
-        | Gaggenau DI 460113
-      .brands_item_price
-        | 137 000 Р    
-    a.brand_item(href="#" modal_show content="#brand")
-      img(src="/public/pic/gag2.png")
-      .brands_item_caption
-        | Gaggenau RW 464-361
-      .brands_item_price
-        | 465 000 Р    
-    a.brand_item(href="#" modal_show content="#brand")
-      img(src="/public/pic/gag3.png")
-      .brands_item_caption
-        | Gaggenau BMP 250-100
-      .brands_item_price
-        | 188 000 Р    
-    a.brand_item(href="#" modal_show content="#brand")
-      img(src="/public/pic/gag4.png")
-      .brands_item_caption
-        | Gaggenau RT 222-203
-      .brands_item_price
-        | 111 000 Р    
-    a.brand_item(href="#" modal_show content="#brand")
-      img(src="/public/pic/gag5.png")
-      .brands_item_caption
-        | Gaggenau RS 295-311
-      .brands_item_price
-        | 577 076 Р    
-    
-
-  #brand
-    .brand-show
-      .brand-show_category
-        | Посудомоечная машина
-      .brand-show_title
-        | Gaggenau DI 460113
-      .brand-show_left
-        img.brand-show_picture(src="/public/pic/gag1-1.jpg")
-        .brand-show_price
-          | 577 076 P
-      .brand-show_right    
-        ul.brand-show_chars
-          li.brand-show_chars_item
-            | полноразмерная напольная
-          li.brand-show_chars_item
-            | встраиваемая частично
-          li.brand-show_chars_item
-            | сушка путем испарения горячих капель
-          li.brand-show_chars_item
-            | экономичный расход воды
-          li.brand-show_chars_item
-            | минимальный расход электричества
-          li.brand-show_chars_item
-            | защита от детей
-          li.brand-show_chars_item
-            | дисплей
-
-    
+  .brand_container(brand="#{id}")
+  .brand_actions
+    a.brand_load-more(href="#" role="brand.load-more") Загрузить еще
