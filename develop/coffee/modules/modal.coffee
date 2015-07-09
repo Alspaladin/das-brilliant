@@ -19,15 +19,24 @@ window.Modal = (->
     $('[modal]')
     .find('[modal_content]')
     .html(html)
-    .end()
-    .addClass('show').focus()
-    $('body').addClass('body__modal')
+    $('[modal]')
+    .addClass('showing')
+    $('body').addClass('body__modal');
+    setTimeout( ->
+      $('[modal]')
+      .addClass('show')
+    , 20)
+    setTimeout( ->
+      $('[modal]')
+      .removeClass('showing')
+    , 1000)
   hide: ->
     
     $('[modal]').addClass('hidding')
     setTimeout ->
       $('body').removeClass('body__modal')
-      $('[modal]').removeClass('show hidding')
+      $('[modal]').removeClass('show hidding');
       $('body').css("overflow","auto")
-    , 1000  
+    , 1000
+    location.hash = ''; 
 )()

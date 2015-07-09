@@ -4,7 +4,7 @@ $ ->
     limit: 20,
     skip: 0
 
-  drawProduct = (product) ->
+  drawListItem = (product) ->
     $("""
       <div class="brand_item" product="#{product._id}">
         <img src="http://dasbrilliant.com/products/image/#{product._id}"/>
@@ -12,6 +12,13 @@ $ ->
         <div class="brand_item_price">#{product.price} Р</div>
       </div>
     """).appendTo($brand);
+
+
+  drawProduct = (product) ->
+    template = Handlebars.compile $('[template="product"]').html()
+    Modal.show template product
+    location.hash = product._id
+
 
   getProducts = ->
     $.ajax
@@ -21,23 +28,20 @@ $ ->
     .done (data) ->
       $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
       data.products.forEach (product) ->
-        drawProduct(product)
+        drawListItem(product)
 
   getProduct = (id) ->
     $.ajax
       type: 'get'
       url: settings.HOST + "/products/#{id}"
     .done (data) ->
-     # console.log(data)
-
 
   $(document).on 'click', '[product]', ->
     getProduct($(@).attr('product'))
     .done (product) ->
       window.settings['product'] = product
       product.attributes_values = product.attributes_values.slice(0,8)
-      template = Handlebars.compile $('[template="product"]').html()
-      Modal.show template product
+      drawProduct product
       $('.cart-add').click () ->
         console.log(product)
         cart.add(product['_id'],product.category,product.name,1,product.price)
@@ -62,7 +66,9 @@ $ ->
   if $brand.length
     getProducts()
     
-
+  if location.hash.replace('#', '')
+    getProduct(location.hash.replace('#', '')).done (product) ->
+      drawProduct product
 
   checkCartResult = () ->
     result = window.cart.getAll()

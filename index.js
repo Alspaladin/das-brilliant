@@ -12,7 +12,7 @@ var brand = dbb.collection("brands");
 
 dbb.close();
 }else console.log(err);
-});*/
+});*/ 
 
 
 

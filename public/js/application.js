@@ -8,14 +8,20 @@
 
 (function() {
   $(function() {
-    var $brand, cartCheckPrice, cartCheckType, cartDecrement, cartIncrement, cartPriceCheck, checkCartResult, drawProduct, getProduct, getProducts, params;
+    var $brand, cartCheckPrice, cartCheckType, cartDecrement, cartIncrement, cartPriceCheck, checkCartResult, drawListItem, drawProduct, getProduct, getProducts, params;
     $brand = $('[brand]');
     params = {
       limit: 20,
       skip: 0
     };
-    drawProduct = function(product) {
+    drawListItem = function(product) {
       return $("<div class=\"brand_item\" product=\"" + product._id + "\">\n  <img src=\"http://dasbrilliant.com/products/image/" + product._id + "\"/>\n  <div class=\"brand_item_caption\">" + product.name + "</div>\n  <div class=\"brand_item_price\">" + product.price + " Р</div>\n</div>").appendTo($brand);
+    };
+    drawProduct = function(product) {
+      var template;
+      template = Handlebars.compile($('[template="product"]').html());
+      Modal.show(template(product));
+      return location.hash = product._id;
     };
     getProducts = function() {
       return $.ajax({
@@ -25,7 +31,7 @@
       }).done(function(data) {
         $(".breadcrumbs_item_brend").text(data.products[0]['brand']);
         return data.products.forEach(function(product) {
-          return drawProduct(product);
+          return drawListItem(product);
         });
       });
     };
@@ -37,11 +43,9 @@
     };
     $(document).on('click', '[product]', function() {
       return getProduct($(this).attr('product')).done(function(product) {
-        var template;
         window.settings['product'] = product;
         product.attributes_values = product.attributes_values.slice(0, 8);
-        template = Handlebars.compile($('[template="product"]').html());
-        Modal.show(template(product));
+        drawProduct(product);
         return $('.cart-add').click(function() {
           console.log(product);
           cart.add(product['_id'], product.category, product.name, 1, product.price);
@@ -65,6 +69,11 @@
     });
     if ($brand.length) {
       getProducts();
+    }
+    if (location.hash.replace('#', '')) {
+      getProduct(location.hash.replace('#', '')).done(function(product) {
+        return drawProduct(product);
+      });
     }
     checkCartResult = function() {
       var i, price, result, _i, _len;
@@ -390,16 +399,24 @@
         $('body').css("overflow", "hidden");
         $('.modal_wrapper').mousewheel();
         $('.modal_content').focus();
-        $('[modal]').find('[modal_content]').html(html).end().addClass('show').focus();
-        return $('body').addClass('body__modal');
+        $('[modal]').find('[modal_content]').html(html);
+        $('[modal]').addClass('showing');
+        $('body').addClass('body__modal');
+        setTimeout(function() {
+          return $('[modal]').addClass('show');
+        }, 20);
+        return setTimeout(function() {
+          return $('[modal]').removeClass('showing');
+        }, 1000);
       },
       hide: function() {
         $('[modal]').addClass('hidding');
-        return setTimeout(function() {
+        setTimeout(function() {
           $('body').removeClass('body__modal');
           $('[modal]').removeClass('show hidding');
           return $('body').css("overflow", "auto");
         }, 1000);
+        return location.hash = '';
       }
     };
   })();
