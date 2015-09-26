@@ -8,8 +8,9 @@ $ ->
     $("""
       <div class="brand_item" product="#{product._id}">
         <img src="http://dasbrilliant.com/products/image/#{product._id}"/>
-        <div class="brand_item_caption">#{product.name}</div>
-        <div class="brand_item_price">#{product.price} Р</div>
+        <div style="padding-bottom:10px;text-align:center;" class="brand_item_caption">#{product.name}</div>
+        <div style="font-size:24px;text-align:center;" class="brand_item_price">#{product.price} Р</div>
+          <div style="color:#B8B8B8;font-size:16px;text-align:center;">в наличии</div>
       </div>
     """).appendTo($brand);
 
