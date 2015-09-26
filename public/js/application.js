@@ -15,7 +15,7 @@
       skip: 0
     };
     drawListItem = function(product) {
-      return $("<div class=\"brand_item\" product=\"" + product._id + "\">\n  <img src=\"http://dasbrilliant.com/products/image/" + product._id + "\"/>\n  <div class=\"brand_item_caption\">" + product.name + "</div>\n  <div class=\"brand_item_price\">" + product.price + " Р</div>\n</div>").appendTo($brand);
+      return $("<div class=\"brand_item\" product=\"" + product._id + "\">\n  <img src=\"http://dasbrilliant.com/products/image/" + product._id + "\"/>\n  <div style=\"padding-bottom:10px;text-align:center;\" class=\"brand_item_caption\">" + product.name + "</div>\n  <div style=\"font-size:24px;text-align:center;\" class=\"brand_item_price\">" + product.price + " Р</div>\n    <div style=\"color:#B8B8B8;font-size:16px;text-align:center;\">в наличии</div>\n</div>").appendTo($brand);
     };
     drawProduct = function(product) {
       var template;
