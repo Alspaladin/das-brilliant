@@ -9,7 +9,7 @@
     "jade": "^1.6.0",
     "mongodb": ">=2.0.14",
     "multer": "^0.1.8",
-    "emailis":"^0.0.1"
+    "emailjs":">=0.0.1"
   },
   "devDependencies": {
     "grunt-autoprefixer": "^1.0.1",
