@@ -52,6 +52,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-stylus');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-service');
 
   grunt.registerTask('dev', ['stylus:dev', 'autoprefixer:dev', 'coffee:dev', 'watch:dev']);
 };
