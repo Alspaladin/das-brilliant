@@ -7,7 +7,7 @@ body.page(data-role="page" class='page__'+page)
     h1.page_header(data-init="data-init")
       block page_header
     include ../includes/search
-    if page != 'brands' && page != 'brand'
+    if page != 'brands' && page != 'brand' && page != 'category'
       nav.nav(data-init="data-init")
         include ../includes/nav
     nav.breadcrumbs
@@ -15,9 +15,12 @@ body.page(data-role="page" class='page__'+page)
   .page_wrapper(data-init="data-init")
     .page_container
       block page_container
-  include ../includes/footer
+  if page != 'brands' && page != 'brand' && page != 'category' && page != 'product'
+    include ../includes/footer
   include ../includes/modal
   include ../includes/product
+  include ../includes/categories
+  include ../includes/address_map
   include ../includes/cart
   include ../includes/order
   script(src="/public/js/vendor/jquery-1.10.2.min.js")

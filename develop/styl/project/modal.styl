@@ -22,6 +22,44 @@
   &.show
     z-index 999
     opacity 1
+    &.hasLinks
+      position absolute
+      background none
+      top 25px
+      left 50px
+      width 225px
+      overflow visible
+      .modal_container
+        max-height 400px
+        overflow scroll
+        max-width 100%
+        width 100%
+        margin 0
+        display block
+        background none
+      .modal_content
+        padding 0
+        background rgba(0,0,0, 0.9)
+        display block
+        
+    &.hasMap
+      position fixed
+      background none
+      top 100px
+      left auto
+      right auto
+      width 100%
+      .modal_container
+        width 800px
+        height 500px
+        margin 0 auto
+        display block
+        background none
+      .modal_content
+        padding 0
+        background rgba(0,0,0, 0.9)
+        display block
+      
     
     .modal_container
       transition all 0.5s ease

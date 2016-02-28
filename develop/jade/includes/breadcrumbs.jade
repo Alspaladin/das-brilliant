@@ -9,3 +9,12 @@ if page == 'brand'
   a.breadcrumbs_link(href="/brands") Производители  
   span.breadcrumbs_item →
   span.breadcrumbs_item.breadcrumbs_item_brend 
+  
+if page == 'category'
+  a.breadcrumbs_link(href="/") Галерея
+  span.breadcrumbs_item →
+  a.breadcrumbs_link(href="/brands") Производители  
+  span.breadcrumbs_item →
+  a.breadcrumbs_link.breadcrumbs_item_brend_link 
+  span.breadcrumbs_item →
+  span.breadcrumbs_item.breadcrumbs_item_category 

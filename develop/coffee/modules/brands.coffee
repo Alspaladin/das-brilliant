@@ -12,8 +12,17 @@ $ ->
     .done (brands) ->
       brands.forEach (brand) ->
         brand.name = brand.name.toString().toLowerCase()
-        $("<a class=brands_item href=/brands/#{brand._id }><img src=/public/pic/#{brand.name}.png></a>")
+        $("<div class=brands_item brand=#{brand._id}><a class=brands_item_link href=/brands/#{brand._id }/categories><img src=/public/pic/#{brand.name}.png></a></div>")
         .appendTo($brands)
+      $(document).on 'click', '[brand] > a', (e, data) ->
+        brand = $(@).parent()
+        getCategories(brand.attr('brand'))
+          .done (categories) ->
+            drawCategories(categories, brand)
+        e.preventDefault()
+        false
+      false
+            
     .done (brands) ->
       $cont = $('.brands_container')
       $cont.imagesLoaded () ->
@@ -21,7 +30,16 @@ $ ->
           columnWidth: 250,
           gutter: 52 
           itemSelector: '.brands_item'
+          
+  getCategories = (brand_id) ->
+    $.ajax
+      type: 'get'
+      url: settings.HOST + "/products/brand/#{brand_id}/categories"
+    .done (data) ->
 
+  drawCategories = (categories, brand) ->
+    template = Handlebars.compile $('[template="categories"]').html()
+    Modal.show(template(categories), brand, true)
     
   
   
