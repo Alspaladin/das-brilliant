@@ -1,6 +1,6 @@
 (function() {
   window.settings = {
-    HOST: 'http://localhost',
+    HOST: 'http://dasbrilliant.com',
     product: null
   };
 

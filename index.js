@@ -38,10 +38,12 @@ var EmailServer  = email.server.connect({
    ssl:     true
 });
 
-app.use('/public', express.static('/Users/alsold/work/das-brilliant/public'));
+//app.use('/public', express.static('/Users/alsold/work/das-brilliant/public'));
+app.use('/public', express.static('/home/alexxorlovv/app/public'));
 
 app.set('port', (process.env.PORT || 80));
-app.set('views', '/Users/alsold/work/das-brilliant/develop/jade');
+//app.set('views', '/Users/alsold/work/das-brilliant/develop/jade');
+app.set('views', '/home/alexxorlovv/app/develop/jade');
 app.set('view engine', 'jade');
 
 
