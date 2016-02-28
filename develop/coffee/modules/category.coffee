@@ -46,7 +46,6 @@ $ ->
     getProduct($(@).attr('product'))
     .done (product) ->
       window.settings['product'] = product
-      console.log(product);
       product.attributes_values = product.attributes_values.slice(0,8)
       drawProduct product
       $('.cart-add').click () ->

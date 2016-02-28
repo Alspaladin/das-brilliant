@@ -34,7 +34,7 @@ var email   = require("emailjs/email");
 var EmailServer  = email.server.connect({
    user:    "sendered@yandex.ru", 
    password:"qweadfD!$gt54Da!", 
-   host:    "smtp.yandex.com", 
+   host:    "smtp.yandex.com",
    ssl:     true
 });
 
@@ -71,7 +71,17 @@ app.get('/brands/:id', function (req, res) {
   res.render('brand', { page: 'brand', id: req.params.id });
 })
 
-app.get('/brands/:brand_id/categories', getProductCategories);
+app.get('/brands/:brand_id/categories', function(req, res){
+    return getProductCategories(req, function(err, data){
+        console.log(err, data);
+        if(err){
+            res.redirect("/");
+            res.end();
+            return;
+        }
+        res.render('categories', { page: 'categories', categories: data, brand_id: req.params.brand_id });
+    });  
+});
 
 app.get('/brands/:brand_id/category/:id', function (req, res) {
   res.render('category', { page: 'category', id: req.params.id, brand_id: req.params.brand_id });
@@ -152,6 +162,14 @@ app.get('/products/brands/',function(req, res, next){
 app.get('/products/:id',getProduct)
 app.get('/products/brand/:id',getProductBrands)
 app.get('/products/brand/:brand_id/category/:id',getProductCategory)
+app.get('/products/brand/:brand_id/categories', function(req, res){
+    getProductCategories(req, function(err, data){
+        if(err){
+            return res.end(err);
+        }
+        res.send({categories: data, brand_id: req.params.brand_id });
+    });
+})
 app.get('/find/',getProductSearch)
 
 app.get('/products/image/:id',function(req, res, next){
@@ -397,14 +415,16 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
 
 
 
- function getProductCategories(req, res, next) {
+ function getProductCategories(req, done) {
   //req.params.id;
     MongoClient.connect(mongoConnect,function(err,db){
         if(err){
-            res.end(null, err);
+            done(err);
         }
 
-        if(req.params.brand_id.length != 24){res.redirect("/"); res.end();return;}
+        if(req.params.brand_id.length != 24){
+            done('wrong id type');
+        }
 
         var crystal = db.db(mongoConfig['database']);
 
@@ -426,9 +446,7 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
         prod.toArray(function(err, items){
             if(items.length < 0){
                 db.close();
-                res.redirect("/");
-                res.end();
-                return;
+                return done(err);
             }
             items.map(function(item){
                 category_ids.push(new ObjectID(item.category_id));
@@ -436,12 +454,10 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
             categories.find({_id: {$in: category_ids}},{id:1, name:1},function(e,cat_data){
                 cat_data.toArray(function(err, data){
                     if(!data){
-                        res.redirect("/");
-                        res.end();
-                        return;
+                        return done(err);
                     }
                     db.close();
-                    res.render('categories', { page: 'categories', categories: data, brand_id: req.params.brand_id });
+                    return done(null, data);
                 })
             });
         }) 

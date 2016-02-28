@@ -220,17 +220,27 @@
 
 (function() {
   $(function() {
-    var $brands;
+    var $brands, drawCategories, getCategories;
     $brands = $('[brands]');
     if ($brands.length) {
-      return $.ajax({
+      $.ajax({
         type: 'get',
         url: settings.HOST + '/products/brands/'
       }).done(function(brands) {
-        return brands.forEach(function(brand) {
+        brands.forEach(function(brand) {
           brand.name = brand.name.toString().toLowerCase();
-          return $("<a class=brands_item href=/brands/" + brand._id + "><img src=/public/pic/" + brand.name + ".png></a>").appendTo($brands);
+          return $("<div class=brands_item brand=" + brand._id + "><a class=brands_item_link href=/brands/" + brand._id + "/categories><img src=/public/pic/" + brand.name + ".png></a></div>").appendTo($brands);
         });
+        $(document).on('click', '[brand] > a', function(e, data) {
+          var brand;
+          brand = $(this).parent();
+          getCategories(brand.attr('brand')).done(function(categories) {
+            return drawCategories(categories, brand);
+          });
+          e.preventDefault();
+          return false;
+        });
+        return false;
       }).done(function(brands) {
         var $cont;
         $cont = $('.brands_container');
@@ -243,6 +253,17 @@
         });
       });
     }
+    getCategories = function(brand_id) {
+      return $.ajax({
+        type: 'get',
+        url: settings.HOST + ("/products/brand/" + brand_id + "/categories")
+      }).done(function(data) {});
+    };
+    return drawCategories = function(categories, brand) {
+      var template;
+      template = Handlebars.compile($('[template="categories"]').html());
+      return Modal.show(template(categories), brand, true);
+    };
   });
 
 }).call(this);
@@ -449,7 +470,6 @@
     $(document).on('click', '[product]', function() {
       return getProduct($(this).attr('product')).done(function(product) {
         window.settings['product'] = product;
-        console.log(product);
         product.attributes_values = product.attributes_values.slice(0, 8);
         drawProduct(product);
         return $('.cart-add').click(function() {
@@ -606,16 +626,34 @@
     }).on('click', '[modal]', function() {
       return Modal.hide();
     }).on('click', '[modal_container]', function(e) {
-      e.stopPropagation();
-      return false;
+      if ($(e.target).hasClass('link_to_contacts')) {
+        return true;
+      }
+      if ($('[modal_content]').children().hasClass('links') || $('[modal_content]').children().hasClass('map')) {
+        return true;
+      } else {
+        e.stopPropagation();
+        return false;
+      }
     }).on('keyup', function(e) {
       if (e.keyCode === 27 && $('[modal]').hasClass('show')) {
         return Modal.hide();
       }
     });
     return {
-      show: function(html) {
-        $('body').css("overflow", "hidden");
+      show: function(html, parent, force_append) {
+        var wrapper;
+        wrapper = $('.modal_wrapper');
+        if (parent) {
+          wrapper.appendTo(parent);
+          if (force_append) {
+            wrapper.addClass('hasLinks');
+          } else {
+            wrapper.addClass('hasMap');
+          }
+        } else {
+          $('body').css("overflow", "hidden");
+        }
         $('.modal_wrapper').mousewheel();
         $('.modal_content').focus();
         $('[modal]').find('[modal_content]').html(html);
@@ -646,7 +684,130 @@
   window.Page = (function() {
     return {
       init: function() {
-        return $('[data-init="data-init"]').addClass('init');
+        $('[data-init="data-init"]').addClass('init');
+        $(document).on('click', '.map_link', function(e, data) {
+          Page.drawMap();
+          e.preventDefault();
+          return false;
+        });
+        return false;
+      },
+      drawMap: function(data) {
+        var script, template;
+        template = Handlebars.compile($('[template="address_map"]').html());
+        if (typeof window.map === 'undefined') {
+          script = document.createElement('script');
+          script.onload = function() {
+            Modal.show(template, $('body'));
+            Page.initMap();
+            return false;
+          };
+          script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyD-rRs1O8Xn8RimjoQ-dKurAD5R1bRfN0A&signed_in=true";
+          script.async = true;
+          document.getElementsByTagName('head')[0].appendChild(script);
+          return false;
+        } else {
+          Modal.show(template, $('body'));
+          Page.initMap();
+          return false;
+        }
+      },
+      initMap: function() {
+        var coords, customMapType, customMapTypeId, map, marker;
+        customMapType = new google.maps.StyledMapType([
+          {
+            "featureType": "landscape",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }, {
+            "featureType": "transit",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }, {
+            "featureType": "poi",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }, {
+            "featureType": "water",
+            "elementType": "labels",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }, {
+            "featureType": "road",
+            "elementType": "labels.icon",
+            "stylers": [
+              {
+                "visibility": "off"
+              }
+            ]
+          }, {
+            "stylers": [
+              {
+                "hue": "#00aaff"
+              }, {
+                "saturation": -100
+              }, {
+                "gamma": 2.15
+              }, {
+                "lightness": 12
+              }
+            ]
+          }, {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+              {
+                "visibility": "on"
+              }, {
+                "lightness": 24
+              }
+            ]
+          }, {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+              {
+                "lightness": 57
+              }
+            ]
+          }
+        ], {
+          name: 'Custom Style'
+        });
+        customMapTypeId = 'custom_style';
+        coords = {
+          lat: 57.1117155,
+          lng: 65.5466005
+        };
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: coords,
+          mapTypeControlOptions: {
+            mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
+          }
+        });
+        marker = new google.maps.Marker({
+          position: coords,
+          map: map,
+          title: 'Das Brilliant'
+        });
+        map.mapTypes.set(customMapTypeId, customMapType);
+        return map.setMapTypeId(customMapTypeId);
       }
     };
   })();

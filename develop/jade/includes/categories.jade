@@ -1,0 +1,6 @@
+script(type="text/x-handlebars-template" template="categories")
+  a.categories-header(href='/brands/{{brand_id}}') Все товары
+  .categories-list.links
+    {{#each categories}}
+    a.category-link(href="/brands/{{../brand_id}}/category/{{_id}}") {{name}}
+    {{/each}}

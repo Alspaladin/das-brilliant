@@ -6,14 +6,28 @@ window.Modal = (->
   .on 'click', '[modal]', ->
     Modal.hide()
   .on 'click', '[modal_container]', (e) ->
-    e.stopPropagation()
-    false
+    if $(e.target).hasClass('link_to_contacts')
+      return true
+      
+    if $('[modal_content]').children().hasClass('links') || $('[modal_content]').children().hasClass('map')
+      return true
+    else
+      e.stopPropagation()
+      false
   .on 'keyup', (e) ->
     if e.keyCode == 27 and $('[modal]').hasClass('show')
       Modal.hide()
 
-  show: (html) ->
-    $('body').css("overflow","hidden")
+  show: (html, parent, force_append) ->
+    wrapper = $('.modal_wrapper');
+    if parent
+      wrapper.appendTo(parent)
+      if force_append
+        wrapper.addClass('hasLinks')
+      else
+        wrapper.addClass('hasMap')
+    else
+      $('body').css("overflow","hidden")
     $('.modal_wrapper').mousewheel()
     $('.modal_content').focus()
     $('[modal]')

@@ -1,3 +1,11 @@
-.brand-show
-  each category in categories
-    a.category-link(href="/brands/#{brand_id}/category/#{category._id}") #{category.name}
+extends layouts/layout.jade
+
+block page_header
+  = 'Нам нравятся наши товары. Вам тоже понравятся!'
+
+block page_container
+  .brands_container(categories)
+
+       
+
+  
