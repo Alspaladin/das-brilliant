@@ -1,26 +1,26 @@
 
-/* line 18 : /home/alexxorlovv/app/develop/styl/main.styl */
+/* line 18 : /Users/alsold/work/das-brilliant/develop/styl/main.styl */
 
-/* line 1 : /home/alexxorlovv/app/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
-/* line 286 : /home/alexxorlovv/app/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
+/* line 286 : /Users/alsold/work/das-brilliant/node_modules/grunt-contrib-stylus/node_modules/stylus/lib/functions/index.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 /* normalize.css v3.0.1 | MIT License | git.io/normalize */
 
-/* line 9 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 9 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-/* line 19 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 19 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 body {
   margin: 0;
 }
 
-/* line 32 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 32 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 article,
 aside,
 details,
@@ -36,7 +36,7 @@ summary {
   display: block;
 }
 
-/* line 52 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 52 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 audio,
 canvas,
 progress,
@@ -45,63 +45,63 @@ video {
   vertical-align: baseline; /* 2 */
 }
 
-/* line 65 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 65 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-/* line 75 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 75 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 [hidden],
 template {
   display: none;
 }
 
-/* line 87 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 87 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 a {
   background: transparent;
 }
 
-/* line 95 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 95 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 107 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 107 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-/* line 115 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 115 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 124 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 124 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 dfn {
   font-style: italic;
 }
 
-/* line 133 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 133 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 142 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 142 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 mark {
   background: #ff0;
   color: #000;
 }
 
-/* line 151 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 151 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 small {
   font-size: 80%;
 }
 
-/* line 159 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 159 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 sub,
 sup {
   font-size: 75%;
@@ -110,44 +110,44 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 167 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 167 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 sup {
   top: -0.5em;
 }
 
-/* line 171 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 171 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 sub {
   bottom: -0.25em;
 }
 
-/* line 182 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 182 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 img {
   border: 0;
 }
 
-/* line 190 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 190 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 201 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 201 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 figure {
   margin: 1em 40px;
 }
 
-/* line 209 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 209 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-/* line 219 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 219 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 pre {
   overflow: auto;
 }
 
-/* line 227 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 227 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 code,
 kbd,
 pre,
@@ -156,7 +156,7 @@ samp {
   font-size: 1em;
 }
 
-/* line 250 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 250 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 input,
 optgroup,
@@ -167,18 +167,18 @@ textarea {
   margin: 0; /* 3 */
 }
 
-/* line 264 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 264 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button {
   overflow: visible;
 }
 
-/* line 275 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 275 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 select {
   text-transform: none;
 }
 
-/* line 288 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 288 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -187,25 +187,25 @@ input[type="submit"] {
   cursor: pointer; /* 3 */
 }
 
-/* line 300 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 300 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-/* line 309 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 309 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 320 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 320 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 input {
   line-height: normal;
 }
 
-/* line 332 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 332 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="checkbox"],
 input[type="radio"] {
   -moz-box-sizing: border-box;
@@ -213,65 +213,65 @@ input[type="radio"] {
   padding: 0; /* 2 */
 }
 
-/* line 344 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 344 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-/* line 355 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 355 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   -moz-box-sizing: content-box; /* 2 */
   box-sizing: content-box;
 }
 
-/* line 368 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 368 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-/* line 377 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 377 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-/* line 388 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 388 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 legend {
   border: 0; /* 1 */
   padding: 0; /* 2 */
 }
 
-/* line 397 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 397 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 textarea {
   overflow: auto;
 }
 
-/* line 406 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 406 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 optgroup {
   font-weight: bold;
 }
 
-/* line 417 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 417 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 422 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 422 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 td,
 th {
   padding: 0;
 }
 
-/* line 425 : /home/alexxorlovv/app/develop/styl/foundation/normalize.styl */
+/* line 425 : /Users/alsold/work/das-brilliant/develop/styl/foundation/normalize.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 
-/* line 6 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 6 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 html,
 body,
 div,
@@ -361,7 +361,7 @@ video {
   vertical-align: baseline;
 }
 
-/* line 27 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 27 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 article,
 aside,
 details,
@@ -376,24 +376,24 @@ section {
   display: block;
 }
 
-/* line 31 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 31 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 body {
   line-height: 1;
 }
 
-/* line 34 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 ol,
 ul {
   list-style: none;
 }
 
-/* line 37 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 37 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 40 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 40 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -402,21 +402,21 @@ q:after {
   content: none;
 }
 
-/* line 45 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 45 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 48 : /home/alexxorlovv/app/develop/styl/foundation/reset.styl */
+/* line 48 : /Users/alsold/work/das-brilliant/develop/styl/foundation/reset.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 
-/* line 19 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 19 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 
-/* line 2 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 2 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 
-/* line 5 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 5 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 * {
   -moz-box-sizing: border-box;
        box-sizing: border-box;
@@ -424,32 +424,37 @@ table {
   text-rendering: optimizeSpeed;
 }
 
-/* line 17 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 10 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
+.hidden {
+  display: none;
+}
+
+/* line 19 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 body,
 html {
   height: 100%;
 }
 
-/* line 20 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 22 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 body.body__modal,
 html.body__modal {
   width: 100%;
 }
 
-/* line 24 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 26 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 body {
   font-size: 16px;
   font-family: 'Exo 2', sans-serif;
   color: #fff;
 }
 
-/* line 27 : /home/alexxorlovv/app/develop/styl/base/theme.styl */
+/* line 29 : /Users/alsold/work/das-brilliant/develop/styl/base/theme.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 
-/* line 3 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 3 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 
-/* line 5 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 5 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .logo::before {
   -webkit-transform: rotate(-360deg);
      -moz-transform: rotate(-360deg);
@@ -460,7 +465,7 @@ body {
        transition: all 1s ease;
 }
 
-/* line 10 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 10 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .logo::after {
   -webkit-transform: translate3d(30px, 0, 0);
      -moz-transform: translate3d(30px, 0, 0);
@@ -470,9 +475,9 @@ body {
        transition: all 0.5s ease;
 }
 
-/* line 15 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 15 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 
-/* line 17 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 17 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .logo.init::before {
   -webkit-transform: rotate(0);
      -moz-transform: rotate(0);
@@ -481,7 +486,7 @@ body {
   opacity: 1;
 }
 
-/* line 21 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 21 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .logo.init::after {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -489,7 +494,7 @@ body {
   opacity: 1;
 }
 
-/* line 26 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 26 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .page_header {
   -webkit-transform: translate3d(0, -30px, 0);
      -moz-transform: translate3d(0, -30px, 0);
@@ -497,7 +502,7 @@ body {
   opacity: 0;
 }
 
-/* line 30 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 30 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .page_header.init {
   -moz-transition: all 0.5s ease 0.5s;
        transition: all 0.5s ease 0.5s;
@@ -507,50 +512,50 @@ body {
   opacity: 1;
 }
 
-/* line 36 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 36 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .nav_item,
 .nav_item::before,
 .nav_item::after {
   opacity: 0;
 }
 
-/* line 41 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 41 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item {
   opacity: 1;
 }
 
-/* line 44 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 44 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item::before,
 .init .nav_item::after {
   opacity: 1;
 }
 
-/* line 48 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 48 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(1) {
   -moz-transition: opacity 0.5s ease 1s;
        transition: opacity 0.5s ease 1s;
 }
 
-/* line 51 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 51 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(2) {
   -moz-transition: opacity 0.5s ease 1.25s;
        transition: opacity 0.5s ease 1.25s;
 }
 
-/* line 54 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 54 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(2)::before,
 .init .nav_item:nth-of-type(2)::after {
   -moz-transition: all 0.5s ease 1.75s;
        transition: all 0.5s ease 1.75s;
 }
 
-/* line 58 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 58 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .nav_item:nth-of-type(3) {
   -moz-transition: opacity 0.5s ease 1.5s;
        transition: opacity 0.5s ease 1.5s;
 }
 
-/* line 62 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 62 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .search {
   -webkit-transform: translate3d(30px, 0, 0);
      -moz-transform: translate3d(30px, 0, 0);
@@ -558,7 +563,7 @@ body {
   opacity: 0;
 }
 
-/* line 66 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 66 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .search.init {
   -moz-transition: all 0.5s ease 0.5s;
        transition: all 0.5s ease 0.5s;
@@ -568,7 +573,7 @@ body {
   opacity: 1;
 }
 
-/* line 72 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 72 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .social {
   -webkit-transform: translate3d(0, 30px, 0);
      -moz-transform: translate3d(0, 30px, 0);
@@ -576,7 +581,7 @@ body {
   opacity: 0;
 }
 
-/* line 76 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 76 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .social {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -584,41 +589,41 @@ body {
   opacity: 1;
 }
 
-/* line 80 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 80 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(1) {
   -moz-transition: all 0.5s ease 1s;
        transition: all 0.5s ease 1s;
 }
 
-/* line 83 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 83 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(2) {
   -moz-transition: all 0.5s ease 1.25s;
        transition: all 0.5s ease 1.25s;
 }
 
-/* line 86 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 86 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .init .social:nth-of-type(3) {
   -moz-transition: all 0.5s ease 1.5s;
        transition: all 0.5s ease 1.5s;
 }
 
-/* line 89 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 89 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .page_wrapper {
   opacity: 0;
 }
 
-/* line 92 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 92 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 .page_wrapper.init {
   opacity: 1;
   -moz-transition: all 1.5s ease 1.75s;
        transition: all 1.5s ease 1.75s;
 }
 
-/* line 94 : /home/alexxorlovv/app/develop/styl/base/init.styl */
+/* line 94 : /Users/alsold/work/das-brilliant/develop/styl/base/init.styl */
 
-/* line 94 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 94 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 .page {
   margin: 0 auto;
   width: 100%;
@@ -629,7 +634,7 @@ body {
        background-size: cover;
 }
 
-/* line 10 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 10 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 .page_header {
   margin-bottom: 37px;
   padding-top: 32px;
@@ -639,23 +644,23 @@ body {
   text-align: center;
 }
 
-/* line 18 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 18 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 .page_wrapper {
   padding: 140px 0 60px;
 }
 
-/* line 21 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 21 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 .page_container {
   position: relative;
   z-index: 1;
   min-height: 100%;
 }
 
-/* line 24 : /home/alexxorlovv/app/develop/styl/project/page.styl */
+/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/project/page.styl */
 
-/* line 24 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .header {
   overflow: hidden;
   position: fixed;
@@ -664,7 +669,7 @@ body {
   height: 160px;
 }
 
-/* line 8 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 8 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .header::before {
   position: absolute;
   left: 0;
@@ -677,7 +682,7 @@ body {
   content: '';
 }
 
-/* line 18 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 18 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .logo {
   display: block;
   position: absolute;
@@ -688,7 +693,7 @@ body {
   height: 40px;
 }
 
-/* line 27 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 27 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .logo::before {
   position: absolute;
   left: 0;
@@ -699,7 +704,7 @@ body {
   content: '';
 }
 
-/* line 36 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 36 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .logo::after {
   position: absolute;
   left: 51px;
@@ -710,9 +715,9 @@ body {
   content: '';
 }
 
-/* line 45 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 45 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 
-/* line 47 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 47 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .logo:hover::before {
   -webkit-transform: rotate(360deg);
      -moz-transform: rotate(360deg);
@@ -720,7 +725,7 @@ body {
           transform: rotate(360deg);
 }
 
-/* line 50 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 50 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search {
   position: absolute;
   right: 26px;
@@ -729,7 +734,7 @@ body {
   height: 27px;
 }
 
-/* line 57 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 57 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search_label {
   cursor: pointer;
   position: absolute;
@@ -740,17 +745,17 @@ body {
   background-image: url("../images/search_label.png");
 }
 
-/* line 66 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 66 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search_label:hover {
   background-image: url("../images/search_label__hover.png");
 }
 
-/* line 69 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 69 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 #search_show {
   display: none;
 }
 
-/* line 72 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 72 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 #search_show:checked ~ .search_control {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
@@ -758,12 +763,12 @@ body {
   opacity: 1;
 }
 
-/* line 76 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 76 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 #search_show:checked ~ .search_label {
   background-image: url("../images/search_label__focus.png");
 }
 
-/* line 80 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 80 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search_control {
   position: absolute;
   right: -moz-calc(100% + 57px);
@@ -777,7 +782,7 @@ body {
        transition: all 0.3s ease;
 }
 
-/* line 88 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 88 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search_control [type="text"] {
   outline: none;
   border: none;
@@ -789,7 +794,7 @@ body {
   background-color: rgba(0,0,0,0.5);
 }
 
-/* line 98 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 98 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .search_control::after {
   position: absolute;
   left: 100%;
@@ -801,7 +806,7 @@ body {
   content: '';
 }
 
-/* line 110 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 110 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .cart-info {
   background-image: url("../images/cart-white.svg");
   position: relative;
@@ -811,7 +816,7 @@ body {
   height: 20px;
 }
 
-/* line 118 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 118 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .cart-number {
   -moz-border-radius: 100px;
        border-radius: 100px;
@@ -828,23 +833,23 @@ body {
   cursor: pointer;
 }
 
-/* line 132 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 132 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .page__brands .cart-info,
 .page__brand .cart-info {
   background-image: url("../images/cart.svg");
 }
 
-/* line 136 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 136 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 .page__brands .cart-number,
 .page__brand .cart-number {
   color: #000;
 }
 
-/* line 138 : /home/alexxorlovv/app/develop/styl/project/header.styl */
+/* line 138 : /Users/alsold/work/das-brilliant/develop/styl/project/header.styl */
 
-/* line 138 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 138 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .footer {
   font-size: 0;
   letter-spacing: 0;
@@ -860,7 +865,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 .footer > *,
 .footer > *::after,
 .footer > *::before {
@@ -870,7 +875,7 @@ body {
   line-height: normal;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .footer::before {
   position: absolute;
   left: 0;
@@ -883,14 +888,14 @@ body {
   content: '';
 }
 
-/* line 23 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 23 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .socials {
   font-size: 0;
   letter-spacing: 0;
   line-height: 0;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 .socials > *,
 .socials > *::after,
 .socials > *::before {
@@ -900,13 +905,13 @@ body {
   line-height: normal;
 }
 
-/* line 26 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 26 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social {
   position: relative;
   margin: 0 36px;
 }
 
-/* line 30 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 30 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social::before,
 .social::after {
   display: block;
@@ -920,81 +925,81 @@ body {
        transition: all 0.3s ease;
 }
 
-/* line 41 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 41 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social::before {
   opacity: 0;
 }
 
-/* line 44 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 44 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social::after {
   opacity: 1;
 }
 
-/* line 47 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 47 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 49 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 49 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social:hover::before {
   opacity: 1;
 }
 
-/* line 52 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 52 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social:hover::after {
   opacity: 0;
 }
 
-/* line 55 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 55 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__fb {
   width: 10px;
   height: 19px;
 }
 
-/* line 59 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 59 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__fb::before {
   background-image: url("../images/fb__hover.png");
 }
 
-/* line 62 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 62 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__fb::after {
   background-image: url("../images/fb.png");
 }
 
-/* line 65 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 65 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__tw {
   width: 27px;
   height: 19px;
 }
 
-/* line 69 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 69 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__tw::before {
   background-image: url("../images/tw__hover.png");
 }
 
-/* line 72 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 72 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__tw::after {
   background-image: url("../images/tw.png");
 }
 
-/* line 75 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 75 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__vk {
   width: 27px;
   height: 15px;
 }
 
-/* line 79 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 79 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__vk::before {
   background-image: url("../images/vk__hover.png");
 }
 
-/* line 82 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 82 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 .social__vk::after {
   background-image: url("../images/vk.png");
 }
 
-/* line 83 : /home/alexxorlovv/app/develop/styl/project/footer.styl */
+/* line 83 : /Users/alsold/work/das-brilliant/develop/styl/project/footer.styl */
 
-/* line 83 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 83 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav {
   font-size: 0;
   letter-spacing: 0;
@@ -1004,7 +1009,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 .nav > *,
 .nav > *::after,
 .nav > *::before {
@@ -1014,13 +1019,13 @@ body {
   line-height: normal;
 }
 
-/* line 8 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 8 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav_item {
   text-decoration: none;
   color: #fff;
 }
 
-/* line 12 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 12 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav_item::after,
 .nav_item::before {
   position: relative;
@@ -1032,17 +1037,17 @@ body {
   content: '';
 }
 
-/* line 22 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 22 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav_item:hover {
   color: #3eb5f1;
 }
 
-/* line 25 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 25 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav_item.active {
   color: #f30;
 }
 
-/* line 28 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 28 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .nav_item:last-of-type::before,
 .nav_item:last-of-type::after,
 .nav_item:first-of-type::before,
@@ -1050,7 +1055,7 @@ body {
   display: none;
 }
 
-/* line 34 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs {
   font-size: 0;
   letter-spacing: 0;
@@ -1060,7 +1065,7 @@ body {
   text-align: center;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 .breadcrumbs > *,
 .breadcrumbs > *::after,
 .breadcrumbs > *::before {
@@ -1070,28 +1075,28 @@ body {
   line-height: normal;
 }
 
-/* line 40 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 40 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_item {
   margin: 0 4px;
 }
 
-/* line 43 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 43 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_link {
   margin: 0 4px;
   color: #f30;
   text-decoration: none;
 }
 
-/* line 48 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 48 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 .breadcrumbs_link:hover {
   color: #3eb5f1;
 }
 
-/* line 49 : /home/alexxorlovv/app/develop/styl/project/nav.styl */
+/* line 49 : /Users/alsold/work/das-brilliant/develop/styl/project/nav.styl */
 
-/* line 49 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 49 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link {
   display: inline-block;
   position: relative;
@@ -1106,7 +1111,7 @@ body {
   background-color: rgba(0,0,0,0.75);
 }
 
-/* line 14 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 14 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link::before {
   display: block;
   position: absolute;
@@ -1123,7 +1128,7 @@ body {
        transition: all 0.5s ease;
 }
 
-/* line 26 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 26 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link::after {
   position: absolute;
   left: 0;
@@ -1136,25 +1141,25 @@ body {
        transition: all 0.4s ease;
 }
 
-/* line 36 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 36 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 38 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 38 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link:hover::before {
   -webkit-transform: translate3d(0, 0, 0);
      -moz-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
 }
 
-/* line 41 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 41 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 .catalog-link:hover::after {
   color: #000;
 }
 
-/* line 42 : /home/alexxorlovv/app/develop/styl/project/catalog.styl */
+/* line 42 : /Users/alsold/work/das-brilliant/develop/styl/project/catalog.styl */
 
-/* line 42 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 42 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper {
   display: block;
   position: fixed;
@@ -1172,7 +1177,7 @@ body {
   overflow: auto;
 }
 
-/* line 15 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 15 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper:after {
   display: inline-block;
   vertical-align: middle;
@@ -1181,13 +1186,13 @@ body {
   content: '';
 }
 
-/* line 22 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 22 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.show {
   z-index: 999;
   opacity: 1;
 }
 
-/* line 26 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 26 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.show .modal_container {
   -moz-transition: all 0.5s ease;
        transition: all 0.5s ease;
@@ -1197,12 +1202,12 @@ body {
   opacity: 1;
 }
 
-/* line 31 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 31 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.hidding {
   opacity: 0;
 }
 
-/* line 34 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_wrapper.hidding .modal_container {
   -webkit-transform: translate3d(0, 50px, 0);
      -moz-transform: translate3d(0, 50px, 0);
@@ -1210,7 +1215,7 @@ body {
   opacity: 0;
 }
 
-/* line 38 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 38 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_container {
   z-index: 9999;
   margin: 100px 0;
@@ -1225,35 +1230,35 @@ body {
   max-width: 60%;
 }
 
-/* line 49 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 49 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 .modal_content {
   background-color: #fff;
   padding: 60px;
   z-index: 99999;
 }
 
-/* line 52 : /home/alexxorlovv/app/develop/styl/project/modal.styl */
+/* line 52 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
 
-/* line 52 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 52 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .page__index,
 .header::before,
 .footer::before {
   background-image: url("..//images/bg_index.jpg");
 }
 
-/* line 7 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 7 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .nav {
   margin-bottom: 73px;
 }
 
-/* line 10 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 10 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .page_container {
   padding-top: 51px;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 13 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_text {
   width: 387px;
   margin: 0 auto 190px;
@@ -1262,47 +1267,47 @@ body {
   font-size: 18px;
 }
 
-/* line 20 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 20 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_text span {
   font-weight: 600;
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 24 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_catalog-link {
   text-align: center;
 }
 
-/* line 25 : /home/alexxorlovv/app/develop/styl/pages/index.styl */
+/* line 25 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 
-/* line 25 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 25 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 3 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 3 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts,
 .page__contacts .header::before,
 .page__contacts .footer::before {
   background-image: url("../images/bg_contacts.jpg");
 }
 
-/* line 8 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 8 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts .nav {
   margin-bottom: 73px;
 }
 
-/* line 11 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 11 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .page__contacts .page_container {
   padding-top: 51px;
 }
 
-/* line 14 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 14 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts-sections {
   width: 600px;
   margin: 0 auto;
 }
 
-/* line 18 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 18 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contact_link_info {
   color: #fff;
   line-height: 80px;
@@ -1310,44 +1315,44 @@ body {
   text-decoration: none;
 }
 
-/* line 24 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contact_link_info:hover {
   border-bottom: none;
 }
 
-/* line 27 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 27 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section {
   font-family: 'Didact Gothic', sans-serif;
   line-height: 21px;
   font-size: 18px;
 }
 
-/* line 32 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 32 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(1) {
   margin-bottom: 40px;
   border-bottom: 1px solid #fff;
   padding: 0 135px 40px;
 }
 
-/* line 37 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 37 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(2) {
   margin: 0 76px 40px;
   border-bottom: 1px solid #fff;
   padding: 0 90px 40px;
 }
 
-/* line 42 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 42 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(2) span {
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 45 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 45 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) {
   text-align: center;
   line-height: 24px;
 }
 
-/* line 49 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 49 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) a,
 .contacts_section:nth-of-type(3) span {
   text-decoration: none;
@@ -1355,48 +1360,48 @@ body {
   color: #fff;
 }
 
-/* line 54 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 54 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 .contacts_section:nth-of-type(3) a:hover {
   text-decoration: underline;
 }
 
-/* line 55 : /home/alexxorlovv/app/develop/styl/pages/contacts.styl */
+/* line 55 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 
-/* line 55 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 55 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 3 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 3 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .page__team,
 .page__team .header::before,
 .page__team .footer::before {
   background-image: url("../images/bg_team.jpg");
 }
 
-/* line 8 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 8 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .page__team .nav {
   margin-bottom: 73px;
 }
 
-/* line 11 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 11 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .page__team .page_container {
   padding-top: 51px;
 }
 
-/* line 14 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 14 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team_container {
   margin: auto;
   width: 1081px;
 }
 
-/* line 3 : /home/alexxorlovv/app/develop/styl/foundation/mixins.styl */
+/* line 3 : /Users/alsold/work/das-brilliant/develop/styl/foundation/mixins.styl */
 .team_container::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/* line 19 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 19 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item {
   position: relative;
   float: left;
@@ -1407,7 +1412,7 @@ body {
   background-color: #fff;
 }
 
-/* line 28 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 28 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item::before {
   position: absolute;
   opacity: 0;
@@ -1421,24 +1426,24 @@ body {
        transition: all 0.3s ease;
 }
 
-/* line 39 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 39 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item:not(:nth-of-type(4n)) {
   margin-right: 27px;
 }
 
-/* line 42 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 42 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item:nth-last-of-type(4 - n) {
   margin-bottom: 0;
 }
 
-/* line 45 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 45 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 47 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 47 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item:hover::before {
   opacity: 1;
 }
 
-/* line 50 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 50 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item:hover .team-item_name,
 .team-item:hover .team-item_profession {
   opacity: 1;
@@ -1447,7 +1452,7 @@ body {
           transform: translate3d(0, 0, 0);
 }
 
-/* line 55 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 55 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item_name {
   position: relative;
   z-index: 2;
@@ -1463,7 +1468,7 @@ body {
        transition: all 0.3s ease;
 }
 
-/* line 66 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 66 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 .team-item_profession {
   position: relative;
   z-index: 2;
@@ -1478,93 +1483,102 @@ body {
        transition: all 0.3s ease;
 }
 
-/* line 74 : /home/alexxorlovv/app/develop/styl/pages/team.styl */
+/* line 74 : /Users/alsold/work/das-brilliant/develop/styl/pages/team.styl */
 
-/* line 74 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 74 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 1 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 1 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands,
+.page__category,
 .page__brand {
   background-color: #fff;
   color: #000;
 }
 
-/* line 6 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 7 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 9 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 10 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header::before,
+.page__category .header::before,
 .page__brand .header::before,
 .page__brands .footer::before,
+.page__category .footer::before,
 .page__brand .footer::before {
   background-image: none;
   background-color: #fff;
 }
 
-/* line 13 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 14 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 15 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 16 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 17 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 18 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header .logo::before,
+.page__category .header .logo::before,
 .page__brand .header .logo::before {
   background-image: url("../images/logo_gear_black.png");
 }
 
-/* line 20 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 21 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .header .logo::after,
+.page__category .header .logo::after,
 .page__brand .header .logo::after {
   background-image: url("../images/logo_sign_black.png");
 }
 
-/* line 23 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .search_label,
+.page__category .search_label,
 .page__brand .search_label {
   background-image: url("../images/search_label_black.png");
 }
 
-/* line 26 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 27 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 28 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 29 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__fb::after,
+.page__category .social__fb::after,
 .page__brand .social__fb::after {
   background-image: url("../images/fb_black.png");
 }
 
-/* line 31 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 32 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 33 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__tw::after,
+.page__category .social__tw::after,
 .page__brand .social__tw::after {
   background-image: url("../images/tw_black.png");
 }
 
-/* line 36 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 37 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 
-/* line 38 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 39 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .page__brands .social__vk::after,
+.page__category .social__vk::after,
 .page__brand .social__vk::after {
   background-image: url("../images/vk_black.png");
 }
 
-/* line 41 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 42 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_container {
   width: 1160px;
   margin: auto;
 }
 
-/* line 45 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 46 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item {
   width: 250px;
   margin-bottom: 52px;
 }
 
-/* line 50 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 51 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item img {
   display: block;
   width: 100%;
 }
 
-/* line 54 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 55 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_container {
   width: 1160px;
   padding: 0;
@@ -1581,7 +1595,7 @@ body {
           justify-content: space-between;
 }
 
-/* line 70 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 71 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item {
   color: #fff;
   text-align: left;
@@ -1592,29 +1606,29 @@ body {
   cursor: pointer;
 }
 
-/* line 79 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 80 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item img {
   max-height: 200px;
   margin-bottom: 6px;
   display: block;
 }
 
-/* line 84 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 85 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item:hover {
   color: #f30;
 }
 
-/* line 87 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 88 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_caption {
   font-size: 18px;
 }
 
-/* line 90 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 91 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_price {
   font-size: 24px;
 }
 
-/* line 93 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 94 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left,
 .brand-show_right {
   display: inline-block;
@@ -1622,66 +1636,66 @@ body {
   width: 50%;
 }
 
-/* line 99 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 100 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left {
   text-align: center;
   padding-right: 25px;
 }
 
-/* line 103 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 104 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_right {
   padding-left: 25px;
 }
 
-/* line 106 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 107 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_category {
   margin-bottom: 7px;
   color: #888;
   font-size: 18px;
 }
 
-/* line 111 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 112 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_title {
   margin-bottom: 20px;
   font-size: 36px;
   color: #000;
 }
 
-/* line 116 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 117 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_picture {
   margin-bottom: 20px;
   width: 100%;
   display: block;
 }
 
-/* line 121 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 122 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_price {
   font-size: 36px;
   color: #000;
 }
 
-/* line 125 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 126 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars {
   font-size: 20px;
 }
 
-/* line 128 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 129 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item {
   line-height: 25px;
 }
 
-/* line 131 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 132 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item::before {
   content: '-';
   margin-right: 5px;
 }
 
-/* line 135 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 136 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 #brand {
   display: none;
 }
 
-/* line 138 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 139 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button {
   margin-top: 80px;
   background-color: #414141;
@@ -1696,33 +1710,33 @@ body {
   outline: none;
 }
 
-/* line 151 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 152 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button:hover {
   background-color: #505050;
 }
 
-/* line 154 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 155 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button:active {
   background-color: #303030;
 }
 
-/* line 156 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 157 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .center-button {
   text-align: center;
 }
 
-/* line 159 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 160 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_actions {
   text-align: center;
 }
 
-/* line 164 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 165 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-product {
   clear: both;
   margin-top: 30px;
 }
 
-/* line 169 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 170 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-image {
   text-align: center;
   height: 100px;
@@ -1731,7 +1745,7 @@ body {
   overflow: hidden;
 }
 
-/* line 176 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 177 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info-block,
 .cart-col,
 .cart-decrement,
@@ -1741,14 +1755,14 @@ body {
   float: left;
 }
 
-/* line 179 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 180 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info-block {
   margin-right: 5px;
   margin-left: 5px;
   width: 300px;
 }
 
-/* line 184 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 185 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-category,
 .cart-col-name,
 .cart-price-name,
@@ -1758,7 +1772,7 @@ body {
   font-size: 16px;
 }
 
-/* line 189 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 190 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-name,
 .cart-col-info,
 .cart-price-value,
@@ -1767,47 +1781,47 @@ body {
   font-size: 20px;
 }
 
-/* line 193 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 194 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-col {
   margin-right: 20px;
 }
 
-/* line 196 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 197 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-col {
   margin-left: 30px;
 }
 
-/* line 199 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 200 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-increment,
 .cart-decrement {
   cursor: pointer;
 }
 
-/* line 202 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 203 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-decrement {
   margin-right: 5px;
   margin-left: 25px;
 }
 
-/* line 206 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 207 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-increment {
   margin-left: 5px;
 }
 
-/* line 209 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 210 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-result {
   float: right;
   margin-top: 20px;
 }
 
-/* line 213 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 214 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-title {
   color: #242424;
   font-size: 35px;
   margin-bottom: 40px;
 }
 
-/* line 218 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 219 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-no {
   width: 100%;
   text-align: center;
@@ -1817,7 +1831,7 @@ body {
   display: none;
 }
 
-/* line 226 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 227 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .form_text {
   display: block;
   width: 100%;
@@ -1826,12 +1840,12 @@ body {
   outline: none;
 }
 
-/* line 233 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 234 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .form_text:focus {
   border: 1px solid #242424;
 }
 
-/* line 237 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 238 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart_error {
   width: 100%;
   text-align: center;
@@ -1840,7 +1854,7 @@ body {
   display: none;
 }
 
-/* line 244 : /home/alexxorlovv/app/develop/styl/pages/brands.styl */
+/* line 245 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info {
   width: 100%;
   text-align: center;

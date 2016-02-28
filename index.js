@@ -13,8 +13,7 @@ var Db = require('mongodb').Db,
     ObjectID = require('mongodb').ObjectID,
     Binary = require('mongodb').Binary;
 
-var mongoConnect = "mongodb://"+mongoConfig['login']+":"+mongoConfig['password']+"@"+mongoConfig['host']+":"+mongoConfig['port'];
-
+var mongoConnect = "mongodb://"+mongoConfig['login']+":"+mongoConfig['password']+"@"+mongoConfig['host']+":"+mongoConfig['port']+"/" + mongoConfig['database'];
 
 var mongo = function(callback){
 
@@ -39,10 +38,10 @@ var EmailServer  = email.server.connect({
    ssl:     true
 });
 
-app.use('/public', express.static('/home/alexxorlovv/app/public'));
+app.use('/public', express.static('/Users/alsold/work/das-brilliant/public'));
 
 app.set('port', (process.env.PORT || 80));
-app.set('views', '/home/alexxorlovv/app/develop/jade');
+app.set('views', '/Users/alsold/work/das-brilliant/develop/jade');
 app.set('view engine', 'jade');
 
 
@@ -70,6 +69,12 @@ app.get('/brands', function (req, res) {
 
 app.get('/brands/:id', function (req, res) {
   res.render('brand', { page: 'brand', id: req.params.id });
+})
+
+app.get('/brands/:brand_id/categories', getProductCategories);
+
+app.get('/brands/:brand_id/category/:id', function (req, res) {
+  res.render('category', { page: 'category', id: req.params.id, brand_id: req.params.brand_id });
 })
 
 app.get('/team', function (req, res) {
@@ -146,6 +151,7 @@ app.get('/products/brands/',function(req, res, next){
 
 app.get('/products/:id',getProduct)
 app.get('/products/brand/:id',getProductBrands)
+app.get('/products/brand/:brand_id/category/:id',getProductCategory)
 app.get('/find/',getProductSearch)
 
 app.get('/products/image/:id',function(req, res, next){
@@ -391,11 +397,96 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
 
 
 
+ function getProductCategories(req, res, next) {
+  //req.params.id;
+    MongoClient.connect(mongoConnect,function(err,db){
+        if(err){
+            res.end(null, err);
+        }
 
+        if(req.params.brand_id.length != 24){res.redirect("/"); res.end();return;}
 
+        var crystal = db.db(mongoConfig['database']);
 
+        var products = crystal.collection("products");
+        var categories = crystal.collection("categories");
+        var brand = crystal.collection("brands");    
 
+        var options = {};
 
+        if(req.query.limit){
+            options['limit'] = parseInt(req.query.limit);
+        }
+        if(req.query.skip){
+            options['skip'] = parseInt(req.query.skip);
+        }
+
+        var prod = products.find({"brand_id" : new ObjectID(req.params.brand_id)}, { category_id:1 }, options);
+        var category_ids = [];
+        prod.toArray(function(err, items){
+            if(items.length < 0){
+                db.close();
+                res.redirect("/");
+                res.end();
+                return;
+            }
+            items.map(function(item){
+                category_ids.push(new ObjectID(item.category_id));
+            })
+            categories.find({_id: {$in: category_ids}},{id:1, name:1},function(e,cat_data){
+                cat_data.toArray(function(err, data){
+                    if(!data){
+                        res.redirect("/");
+                        res.end();
+                        return;
+                    }
+                    db.close();
+                    res.render('categories', { page: 'categories', categories: data, brand_id: req.params.brand_id });
+                })
+            });
+        }) 
+    });
+ }
+ function getProductCategory(req, res, next){
+  //req.params.id;
+    MongoClient.connect(mongoConnect,function(err,db){
+        if(err){
+            res.end(null, err);
+        }
+
+        if(req.params.brand_id.length != 24){res.redirect("/"); res.end();return;}
+
+        var crystal = db.db(mongoConfig['database']);
+        var attributes_values = crystal.collection("attributes_values");
+        var attributes_keys = crystal.collection("attributes_keys");
+        var products = crystal.collection("products");
+        var categories = crystal.collection("categories");
+        var brand = crystal.collection("brands");    
+
+        var options = {};
+
+        if(req.query.limit){
+            options['limit'] = parseInt(req.query.limit);
+        }
+        if(req.query.skip){
+            options['skip'] = parseInt(req.query.skip);
+        }
+        var prod = products.find({
+            "brand_id" : new ObjectID(req.params.brand_id),
+            "category_id": new ObjectID(req.params.id)},
+            {}, options);
+            
+        prod.toArray(function(err, items){
+            if(!items){
+                res.redirect("/");
+                res.end();
+                return;
+            }
+            var resut = {"products":[],"good":0};
+            finding(items,resut,brand,attributes_values,attributes_keys,categories,false,res,db);
+        }) 
+    });
+ }
 
  function getProductBrands(req, res, next) {
   //req.params.id;

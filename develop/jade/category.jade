@@ -1,0 +1,9 @@
+extends layouts/layout.jade
+
+block page_header
+  = 'Нам нравятся наши товары. Вам тоже понравятся!'
+
+block page_container
+  .brand_container(brand="#{brand_id}", category="#{id}")
+  .brand_actions.hidden
+    a.brand_load-more(href="#" role="category.load-more") Загрузить еще

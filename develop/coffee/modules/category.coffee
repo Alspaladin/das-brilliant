@@ -10,10 +10,11 @@ $ ->
       <div class="brand_item" product="#{product._id}">
         <img src="http://dasbrilliant.com/products/image/#{product._id}"/>
         <div style="padding-bottom:10px;text-align:center;" class="brand_item_caption">#{product.name}</div>
+        <div style="padding-bottom:10px;text-align:center;" class="brand_item_caption">#{product.category}</div>
         <div style="font-size:24px;text-align:center;" class="brand_item_price">#{product.price} Р</div>
           <div style="color:#B8B8B8;font-size:16px;text-align:center;">в наличии</div>
       </div>
-    """).appendTo($brand);
+    """).appendTo($category);
 
 
   drawProduct = (product) ->
@@ -25,20 +26,13 @@ $ ->
   getProducts = ->
     $.ajax
       type: 'get'
-      url: settings.HOST + "/products/brand/#{$brand.attr('brand')}"
+      url: settings.HOST + "/products/brand/#{$brand.attr('brand')}/category/#{$category.attr('category')}"
       data: params
     .done (data) ->
-      $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
-      data.products.forEach (product) ->
-        drawListItem(product)
-        
-  getCategories = ->
-    $.ajax
-      type: 'get'
-      url: settings.HOST + "/products/brand/#{$brand.attr('brand')}/categories"
-      data: params
-    .done (data) ->
-      $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
+      $(".breadcrumbs_item_brend_link").text(data.products[0]['brand'])
+      $(".breadcrumbs_item_brend_link").attr('href', '/brands/' + $brand.attr('brand'))
+      $(".breadcrumbs_item_category").text(data.products[0]['category'])
+      $('.brand_actions').removeClass('hidden') if data.products.length > params.limit
       data.products.forEach (product) ->
         drawListItem(product)
 
@@ -52,6 +46,7 @@ $ ->
     getProduct($(@).attr('product'))
     .done (product) ->
       window.settings['product'] = product
+      console.log(product);
       product.attributes_values = product.attributes_values.slice(0,8)
       drawProduct product
       $('.cart-add').click () ->
@@ -75,18 +70,7 @@ $ ->
       $(@).css("display","none")
     false
 
-  $(document).on 'click', '[role="brand.show-categories"]', ->
-    $(@)
-    .text 'Загрузка'
-    .attr 'disabled', 'disabled'
-    getCategories()
-    .done =>
-      true
-    .fail =>
-      $(@).css("display","none")
-    false
-
-  if $brand.length && $category.length < 1
+  if $category.length
     getProducts()
     
   if location.hash.replace('#', '')
