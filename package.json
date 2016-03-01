@@ -9,7 +9,7 @@
     "jade": "^1.6.0",
     "mongodb": ">=2.0.14",
     "multer": "^0.1.8",
-    "emailjs":">=0.0.1"
+    "emailjs": ">=0.0.1"
   },
   "devDependencies": {
     "grunt-service":"^0.3.2",
@@ -18,6 +18,7 @@
     "grunt-contrib-jade": "^0.12.0",
     "grunt-contrib-stylus": "^0.19.0",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-reload": "^0.2.0"
+    "grunt-reload": "^0.2.0",
+    "grunt-service": "^0.3.3"
   }
 }
