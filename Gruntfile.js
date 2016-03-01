@@ -31,7 +31,16 @@ module.exports = function(grunt) {
       dev: {
         files: {
           '<%= stat %>/js/application.js': [
-            '<%= develop %>/coffee/settings.coffee', 
+            '<%= develop %>/coffee/dev_settings.coffee', 
+            '<%= develop %>/coffee/modules/*.coffee', 
+            '<%= develop %>/coffee/document.coffee'
+          ]
+        }
+      },
+      prod: {
+        files: {
+          '<%= stat %>/js/application.js': [
+            '<%= develop %>/coffee/prod_settings.coffee', 
             '<%= develop %>/coffee/modules/*.coffee', 
             '<%= develop %>/coffee/document.coffee'
           ]
@@ -55,4 +64,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-service');
 
   grunt.registerTask('dev', ['stylus:dev', 'autoprefixer:dev', 'coffee:dev', 'watch:dev']);
+  grunt.registerTask('prod', ['stylus:dev', 'autoprefixer:dev', 'coffee:prod']);
 };

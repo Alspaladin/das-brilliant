@@ -4,6 +4,8 @@ window.Modal = (->
     Modal.show $($(this).attr('content')).html()
     false
   .on 'click', '[modal]', ->
+    if $(e.target).hasClass('link_to_contacts')
+      return true
     Modal.hide()
   .on 'click', '[modal_container]', (e) ->
     if $(e.target).hasClass('link_to_contacts')
@@ -16,6 +18,8 @@ window.Modal = (->
       false
   .on 'keyup', (e) ->
     if e.keyCode == 27 and $('[modal]').hasClass('show')
+      if $(e.target).hasClass('link_to_contacts')
+        return true
       Modal.hide()
 
   show: (html, parent, force_append) ->
@@ -45,7 +49,6 @@ window.Modal = (->
       .removeClass('showing')
     , 1000)
   hide: ->
-    
     $('[modal]').addClass('hidding')
     setTimeout ->
       $('body').removeClass('body__modal')

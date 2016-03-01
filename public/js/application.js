@@ -1,6 +1,6 @@
 (function() {
   window.settings = {
-    HOST: 'http://dasbrilliant.com',
+    HOST: 'http://localhost',
     product: null
   };
 
@@ -624,6 +624,9 @@
       Modal.show($($(this).attr('content')).html());
       return false;
     }).on('click', '[modal]', function() {
+      if ($(e.target).hasClass('link_to_contacts')) {
+        return true;
+      }
       return Modal.hide();
     }).on('click', '[modal_container]', function(e) {
       if ($(e.target).hasClass('link_to_contacts')) {
@@ -637,6 +640,9 @@
       }
     }).on('keyup', function(e) {
       if (e.keyCode === 27 && $('[modal]').hasClass('show')) {
+        if ($(e.target).hasClass('link_to_contacts')) {
+          return true;
+        }
         return Modal.hide();
       }
     });

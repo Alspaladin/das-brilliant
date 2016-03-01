@@ -1,30 +1,19 @@
-var mongoConfig = {
-	host:"127.0.0.1",
-	port:"27017",
-	login:"test_user",
-	password:"1234",
-	database:"crystal"
-};
-
 var Db = require('mongodb').Db,
     MongoClient = require('mongodb').MongoClient,
     Server = require('mongodb').Server,
     ReplSetServers = require('mongodb').ReplSetServers,
     ObjectID = require('mongodb').ObjectID,
-    Binary = require('mongodb').Binary;
-
-var mongoConnect = "mongodb://"+mongoConfig['login']+":"+mongoConfig['password']+"@"+mongoConfig['host']+":"+mongoConfig['port']+"/" + mongoConfig['database'];
+    Binary = require('mongodb').Binary,
+    config = require('./config.js');
 
 var mongo = function(callback){
-
-	MongoClient.connect(mongoConnect,callback);
+	MongoClient.connect(config.mongo_connect, callback);
 };
-
 
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
-var multer = require('multer'); 
+var multer = require('multer');
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
@@ -39,11 +28,11 @@ var EmailServer  = email.server.connect({
 });
 
 //app.use('/public', express.static('/Users/alsold/work/das-brilliant/public'));
-app.use('/public', express.static('/home/alexxorlovv/app/public'));
+app.use('/public', express.static(config.app_dir));
 
 app.set('port', (process.env.PORT || 80));
 //app.set('views', '/Users/alsold/work/das-brilliant/develop/jade');
-app.set('views', '/home/alexxorlovv/app/develop/jade');
+app.set('views', config.jade_dir);
 app.set('view engine', 'jade');
 
 
@@ -139,7 +128,7 @@ res.json({"result":true});
 })
 
 app.get('/products/brands/',function(req, res, next){
-     MongoClient.connect(mongoConnect,function(err,db){
+     MongoClient.connect(config.mongo_connect,function(err,db){
 
       var options = {};
 
@@ -150,7 +139,7 @@ app.get('/products/brands/',function(req, res, next){
         options['skip'] = parseInt(req.query.skip);
       }
 
-    var crystal = db.db(mongoConfig['database']);
+    var crystal = db.db(config.mongo_config['database']);
     var brands = crystal.collection("brands");
 
     brands.find({},options).toArray(function(err,item){
@@ -176,10 +165,10 @@ app.get('/find/',getProductSearch)
 
 app.get('/products/image/:id',function(req, res, next){
 
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
     if(req.params.id.length != 24){res.redirect("/"); res.end();return;}
 
-    var crystal = db.db(mongoConfig['database']);
+    var crystal = db.db(config.mongo_connect['database']);
 
     var products = crystal.collection("products");
 
@@ -202,14 +191,14 @@ app.get('/products/image/:id',function(req, res, next){
  function getProduct(req, res, next) {
   //req.params.id;
 
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
 
       if(req.params.id.length != 24){res.redirect("/"); res.end();return;}
 
 
 
 
-    var crystal = db.db(mongoConfig['database']);
+    var crystal = db.db(config.mongo_config['database']);
 
     var products = crystal.collection("products");
     var attributes_values = crystal.collection("attributes_values");
@@ -285,12 +274,12 @@ function getProductAttributes(count,item,attrs,attributes_values,attributes_keys
 
  function getProductSearch(req, res, next) {
   //req.params.id;
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
 
 
 
 
-    var crystal = db.db(mongoConfig['database']);
+    var crystal = db.db(config.mongo_config['database']);
 
     var products = crystal.collection("products");
     var attributes_values = crystal.collection("attributes_values");
@@ -419,7 +408,7 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
 
  function getProductCategories(req, done) {
   //req.params.id;
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
         if(err){
             done(err);
         }
@@ -428,7 +417,7 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
             done('wrong id type');
         }
 
-        var crystal = db.db(mongoConfig['database']);
+        var crystal = db.db(config.mongo_config['database']);
 
         var products = crystal.collection("products");
         var categories = crystal.collection("categories");
@@ -467,14 +456,14 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
  }
  function getProductCategory(req, res, next){
   //req.params.id;
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
         if(err){
             res.end(null, err);
         }
 
         if(req.params.brand_id.length != 24){res.redirect("/"); res.end();return;}
 
-        var crystal = db.db(mongoConfig['database']);
+        var crystal = db.db(config.mongo_config['database']);
         var attributes_values = crystal.collection("attributes_values");
         var attributes_keys = crystal.collection("attributes_keys");
         var products = crystal.collection("products");
@@ -508,14 +497,14 @@ function finding(items,resut,brand,attributes_values,attributes_keys,categories,
 
  function getProductBrands(req, res, next) {
   //req.params.id;
-    MongoClient.connect(mongoConnect,function(err,db){
+    MongoClient.connect(config.mongo_connect,function(err,db){
 
       if(req.params.id.length != 24){res.redirect("/"); res.end();return;}
 
 
 
 
-    var crystal = db.db(mongoConfig['database']);
+    var crystal = db.db(config.mongo_config['database']);
 
     var products = crystal.collection("products");
     var attributes_values = crystal.collection("attributes_values");
