@@ -235,7 +235,15 @@
           var brand;
           brand = $(this).parent();
           getCategories(brand.attr('brand')).done(function(categories) {
-            return drawCategories(categories, brand);
+            drawCategories(categories, brand);
+            return $(document).on('click', brand, function(e) {
+              if ($('body').hasClass('body__modal')) {
+                return true;
+              }
+              drawCategories(categories, brand);
+              e.preventDefault();
+              return false;
+            });
           });
           e.preventDefault();
           return false;
@@ -624,15 +632,15 @@
       Modal.show($($(this).attr('content')).html());
       return false;
     }).on('click', '[modal]', function() {
-      if ($(e.target).hasClass('link_to_contacts')) {
-        return true;
+      if ($('body').hasClass('body__modal')) {
+        return Modal.hide();
       }
-      return Modal.hide();
+    }).on('click', 'body', function(e) {
+      if (!$(event.target).closest('[modal]:parent').length && !$(event.target).is('[modal]:parent') && $('body').hasClass('body__modal')) {
+        return Modal.hide();
+      }
     }).on('click', '[modal_container]', function(e) {
-      if ($(e.target).hasClass('link_to_contacts')) {
-        return true;
-      }
-      if ($('[modal_content]').children().hasClass('links') || $('[modal_content]').children().hasClass('map')) {
+      if ($('[modal_content]').children().hasClass('links') || $(e.target).hasClass('link_to_contacts')) {
         return true;
       } else {
         e.stopPropagation();
@@ -640,9 +648,6 @@
       }
     }).on('keyup', function(e) {
       if (e.keyCode === 27 && $('[modal]').hasClass('show')) {
-        if ($(e.target).hasClass('link_to_contacts')) {
-          return true;
-        }
         return Modal.hide();
       }
     });

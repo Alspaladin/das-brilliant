@@ -19,6 +19,12 @@ $ ->
         getCategories(brand.attr('brand'))
           .done (categories) ->
             drawCategories(categories, brand)
+            $(document).on 'click', brand, (e) ->
+              if $('body').hasClass('body__modal')
+                return true
+              drawCategories(categories, brand)
+              e.preventDefault()
+              false
         e.preventDefault()
         false
       false
