@@ -164,11 +164,10 @@ app.get('/products/brand/:brand_id/categories', function(req, res){
 app.get('/find/',getProductSearch)
 
 app.get('/products/image/:id',function(req, res, next){
-
     MongoClient.connect(config.mongo_connect,function(err,db){
     if(req.params.id.length != 24){res.redirect("/"); res.end();return;}
 
-    var crystal = db.db(config.mongo_connect['database']);
+    var crystal = db.db(config.mongo_config['database']);
 
     var products = crystal.collection("products");
 
