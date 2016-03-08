@@ -49,21 +49,18 @@ $ ->
       product.attributes_values = product.attributes_values.slice(0,8)
       drawProduct product
       $('.cart-add').click () ->
-        console.log(product)
         cart.add(product['_id'],product.category,product.name,1,product.price)
         window.Modal.hide()
         
 
 
   $(document).on 'click', '[role="category.load-more"]', ->
-    console.log('cate length', $category.length)
     if $category.length < 1
       return false
     $(@)
     .text 'Загрузка'
     .attr 'disabled', 'disabled'
     params.skip += 20
-    console.log('getting ajax category products')
     getProducts()
     .done =>
       $(@)
@@ -74,7 +71,6 @@ $ ->
     false
 
   if $category.length
-    console.log('getting category products')
     getProducts()
     
   if location.hash.replace('#', '')

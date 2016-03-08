@@ -7,11 +7,9 @@ window.Modal = (->
     if($('body').hasClass('body__modal'))
       Modal.hide()
   .on 'click', 'body', (e) ->
-    console.log('body click')
     if !($('[modal]').hasClass('show'))
-      return false
+      return true
     if !$(event.target).closest('[modal]:parent').length && !$(event.target).is('[modal]:parent') && $('body').hasClass('body__modal')
-      console.log('hiding modal')
       Modal.hide()
   .on 'click', '[modal_container]', (e) ->
     if $('[modal_content]').children().hasClass('links') || $(e.target).hasClass('link_to_contacts')

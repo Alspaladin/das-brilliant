@@ -459,20 +459,17 @@
         product.attributes_values = product.attributes_values.slice(0, 8);
         drawProduct(product);
         return $('.cart-add').click(function() {
-          console.log(product);
           cart.add(product['_id'], product.category, product.name, 1, product.price);
           return window.Modal.hide();
         });
       });
     });
     $(document).on('click', '[role="category.load-more"]', function() {
-      console.log('cate length', $category.length);
       if ($category.length < 1) {
         return false;
       }
       $(this).text('Загрузка').attr('disabled', 'disabled');
       params.skip += 20;
-      console.log('getting ajax category products');
       getProducts().done((function(_this) {
         return function() {
           return $(_this).text('Загрузить еще').remotveAttr('disabled');
@@ -485,7 +482,6 @@
       return false;
     });
     if ($category.length) {
-      console.log('getting category products');
       getProducts();
     }
     if (location.hash.replace('#', '')) {
@@ -620,12 +616,10 @@
         return Modal.hide();
       }
     }).on('click', 'body', function(e) {
-      console.log('body click');
       if (!($('[modal]').hasClass('show'))) {
-        return false;
+        return true;
       }
       if (!$(event.target).closest('[modal]:parent').length && !$(event.target).is('[modal]:parent') && $('body').hasClass('body__modal')) {
-        console.log('hiding modal');
         return Modal.hide();
       }
     }).on('click', '[modal_container]', function(e) {
