@@ -340,6 +340,7 @@ db.close();
 
 
 
+
 function getAttributesSearch(count,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res,db)
 {
   var arr = attrs[count];
@@ -350,7 +351,7 @@ function getAttributesSearch(count,attrs,item,items,resut,brand,attributes_value
     {
       resut['products'].push(item); 
       if(resut.good == (items.length - 1)){
-	db.close();
+        db.close();
         res.send(resut);
       }
       else{
@@ -373,26 +374,39 @@ function getAttributesSearch(count,attrs,item,items,resut,brand,attributes_value
 function finding(items,resut,brand,attributes_values,attributes_keys,categories,end,res,db)
 {
   var item = items[resut.good];
-            if(!item['attributes_values']){
-                item['attributes_values'] = [];
-              }
-      brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},{lock:true},function(e,brandFind)
+    if(!item['attributes_values']){
+        item['attributes_values'] = [];
+    }
+    brand.findOne({"_id":new ObjectID(item.brand_id)},{name:1},{lock:true},function(e,brandFind)
+    {
+	  if(brandFind) item['brand'] = brandFind.name;
+      categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat)
       {
-	if(brandFind) item['brand'] = brandFind.name;
-        categories.findOne({"_id":new ObjectID(item.category_id)},{name:1},function(e,cat)
-        {
           item['category'] = cat.name;
                       
           var cursor = attributes_values.find({"product_id":new ObjectID(item['_id'])},{name:1,key_id:1},{lock:true});
           
           cursor.toArray(function(e,attrs){
-            getAttributesSearch(0,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res,db);
+            if(attrs.length < 1){
+                resut.good += 1;
+                resut['products'].push(item);
+                if(resut.good === resut.products.length){
+                  db.close();
+                  res.send(resut);
+                }
+                else{
+                  finding(items,resut,brand,attributes_values,attributes_keys,categories,end,res,db);    
+                }
+            }
+            else{
+              getAttributesSearch(0,attrs,item,items,resut,brand,attributes_values,attributes_keys,categories,end,res,db);   
+            }
           });
 
                      
-        });
-
       });
+
+    });
 
 
 }

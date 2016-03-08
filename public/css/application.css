@@ -1317,39 +1317,40 @@ body {
 /* line 13 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_text {
   width: 387px;
+  text-align: center;
   margin: 0 auto 190px;
   font-family: 'Didact Gothic', sans-serif;
   line-height: 21px;
   font-size: 18px;
 }
 
-/* line 20 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
+/* line 21 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_text span {
   font-weight: 600;
   font-family: 'Exo 2', sans-serif;
 }
 
-/* line 24 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
+/* line 25 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .index_catalog-link {
   text-align: center;
 }
 
-/* line 27 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
+/* line 28 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 .map_link {
   display: inline-block;
   text-align: center;
   margin-top: 30px;
 }
 
-/* line 32 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
+/* line 33 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 #map {
   width: 800px;
   height: 500px;
 }
 
-/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
+/* line 35 : /Users/alsold/work/das-brilliant/develop/styl/pages/index.styl */
 
-/* line 34 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
+/* line 35 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 
 /* line 1 : /Users/alsold/work/das-brilliant/develop/styl/pages/contacts.styl */
 

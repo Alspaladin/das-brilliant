@@ -31,16 +31,6 @@ $ ->
       $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
       data.products.forEach (product) ->
         drawListItem(product)
-        
-  getCategories = ->
-    $.ajax
-      type: 'get'
-      url: settings.HOST + "/products/brand/#{$brand.attr('brand')}/categories"
-      data: params
-    .done (data) ->
-      $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
-      data.products.forEach (product) ->
-        drawListItem(product)
 
   getProduct = (id) ->
     $.ajax
@@ -55,38 +45,28 @@ $ ->
       product.attributes_values = product.attributes_values.slice(0,8)
       drawProduct product
       $('.cart-add').click () ->
-        console.log(product)
         cart.add(product['_id'],product.category,product.name,1,product.price)
         window.Modal.hide()
         
 
 
   $(document).on 'click', '[role="brand.load-more"]', ->
-    $(@)
+    load_button = $(@)
+    load_button
     .text 'Загрузка'
     .attr 'disabled', 'disabled'
     params.skip += 20
     getProducts()
     .done =>
-      $(@)
+      load_button
       .text 'Загрузить еще'
-      .remotveAttr 'disabled'
+      .removeAttr 'disabled'
     .fail =>
-      $(@).css("display","none")
-    false
-
-  $(document).on 'click', '[role="brand.show-categories"]', ->
-    $(@)
-    .text 'Загрузка'
-    .attr 'disabled', 'disabled'
-    getCategories()
-    .done =>
-      true
-    .fail =>
-      $(@).css("display","none")
+      load_button.css("display","none")
     false
 
   if $brand.length && $category.length < 1
+    console.log('getting products')
     getProducts()
     
   if location.hash.replace('#', '')
@@ -149,6 +129,7 @@ $ ->
 
     
   $('.cart-info, .cart-number').click () ->
+    console.log('cart click')
     template = Handlebars.compile $('[template="cart"]').html()
     products = {"all" : window.cart.getAll()}
     Modal.show template products

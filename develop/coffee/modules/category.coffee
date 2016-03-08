@@ -55,11 +55,15 @@ $ ->
         
 
 
-  $(document).on 'click', '[role="brand.load-more"]', ->
+  $(document).on 'click', '[role="category.load-more"]', ->
+    console.log('cate length', $category.length)
+    if $category.length < 1
+      return false
     $(@)
     .text 'Загрузка'
     .attr 'disabled', 'disabled'
     params.skip += 20
+    console.log('getting ajax category products')
     getProducts()
     .done =>
       $(@)
@@ -70,6 +74,7 @@ $ ->
     false
 
   if $category.length
+    console.log('getting category products')
     getProducts()
     
   if location.hash.replace('#', '')

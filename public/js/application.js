@@ -8,7 +8,7 @@
 
 (function() {
   $(function() {
-    var $brand, $category, cartCheckPrice, cartCheckType, cartDecrement, cartIncrement, cartPriceCheck, checkCartResult, drawListItem, drawProduct, getCategories, getProduct, getProducts, params;
+    var $brand, $category, cartCheckPrice, cartCheckType, cartDecrement, cartIncrement, cartPriceCheck, checkCartResult, drawListItem, drawProduct, getProduct, getProducts, params;
     $brand = $('[brand]');
     $category = $('[category]');
     params = {
@@ -36,18 +36,6 @@
         });
       });
     };
-    getCategories = function() {
-      return $.ajax({
-        type: 'get',
-        url: settings.HOST + ("/products/brand/" + ($brand.attr('brand')) + "/categories"),
-        data: params
-      }).done(function(data) {
-        $(".breadcrumbs_item_brend").text(data.products[0]['brand']);
-        return data.products.forEach(function(product) {
-          return drawListItem(product);
-        });
-      });
-    };
     getProduct = function(id) {
       return $.ajax({
         type: 'get',
@@ -60,40 +48,29 @@
         product.attributes_values = product.attributes_values.slice(0, 8);
         drawProduct(product);
         return $('.cart-add').click(function() {
-          console.log(product);
           cart.add(product['_id'], product.category, product.name, 1, product.price);
           return window.Modal.hide();
         });
       });
     });
     $(document).on('click', '[role="brand.load-more"]', function() {
-      $(this).text('Загрузка').attr('disabled', 'disabled');
+      var load_button;
+      load_button = $(this);
+      load_button.text('Загрузка').attr('disabled', 'disabled');
       params.skip += 20;
       getProducts().done((function(_this) {
         return function() {
-          return $(_this).text('Загрузить еще').remotveAttr('disabled');
+          return load_button.text('Загрузить еще').removeAttr('disabled');
         };
       })(this)).fail((function(_this) {
         return function() {
-          return $(_this).css("display", "none");
-        };
-      })(this));
-      return false;
-    });
-    $(document).on('click', '[role="brand.show-categories"]', function() {
-      $(this).text('Загрузка').attr('disabled', 'disabled');
-      getCategories().done((function(_this) {
-        return function() {
-          return true;
-        };
-      })(this)).fail((function(_this) {
-        return function() {
-          return $(_this).css("display", "none");
+          return load_button.css("display", "none");
         };
       })(this));
       return false;
     });
     if ($brand.length && $category.length < 1) {
+      console.log('getting products');
       getProducts();
     }
     if (location.hash.replace('#', '')) {
@@ -166,6 +143,7 @@
     };
     return $('.cart-info, .cart-number').click(function() {
       var products, template;
+      console.log('cart click');
       template = Handlebars.compile($('[template="cart"]').html());
       products = {
         "all": window.cart.getAll()
@@ -487,9 +465,14 @@
         });
       });
     });
-    $(document).on('click', '[role="brand.load-more"]', function() {
+    $(document).on('click', '[role="category.load-more"]', function() {
+      console.log('cate length', $category.length);
+      if ($category.length < 1) {
+        return false;
+      }
       $(this).text('Загрузка').attr('disabled', 'disabled');
       params.skip += 20;
+      console.log('getting ajax category products');
       getProducts().done((function(_this) {
         return function() {
           return $(_this).text('Загрузить еще').remotveAttr('disabled');
@@ -502,6 +485,7 @@
       return false;
     });
     if ($category.length) {
+      console.log('getting category products');
       getProducts();
     }
     if (location.hash.replace('#', '')) {
@@ -636,7 +620,12 @@
         return Modal.hide();
       }
     }).on('click', 'body', function(e) {
+      console.log('body click');
+      if (!($('[modal]').hasClass('show'))) {
+        return false;
+      }
       if (!$(event.target).closest('[modal]:parent').length && !$(event.target).is('[modal]:parent') && $('body').hasClass('body__modal')) {
+        console.log('hiding modal');
         return Modal.hide();
       }
     }).on('click', '[modal_container]', function(e) {
