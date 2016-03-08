@@ -37,7 +37,6 @@
 
   window.cart.increment = () ->
     count = parseInt($.cookie('count'))
-    console.log(count)
     if !count
       count = 0
     count += 1
@@ -59,7 +58,6 @@
       return []
     list = $.parseJSON(list);
     elems = [];
-    #console.log(list)
     for i in list
       
       elems.push($.parseJSON($.cookie(i)))

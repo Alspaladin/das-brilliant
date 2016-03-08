@@ -2,5 +2,6 @@
 *.sublime-workspace
 .DS_Store
 node_modules/
+public/
 dumps
 config.js

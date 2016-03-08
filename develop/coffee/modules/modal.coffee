@@ -29,6 +29,7 @@ window.Modal = (->
         wrapper.addClass('hasLinks')
       else
         wrapper.addClass('hasMap')
+        wrapper.addClass('mapStyle')
     else
       $('body').css("overflow","hidden")
     $('.modal_wrapper').mousewheel()
@@ -51,6 +52,7 @@ window.Modal = (->
     $('[modal]').addClass('hidding')
     setTimeout ->
       $('body').removeClass('body__modal')
+      window.Page.removeMap()
       $('[modal]').removeClass('show hidding');
       $('body').css("overflow","auto")
     , 1000

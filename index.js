@@ -64,7 +64,6 @@ app.get('/brands/:id', function (req, res) {
 
 app.get('/brands/:brand_id/categories', function(req, res){
     return getProductCategories(req, function(err, data){
-        console.log(err, data);
         if(err){
             res.redirect("/");
             res.end();

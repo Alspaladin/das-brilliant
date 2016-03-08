@@ -70,7 +70,6 @@
       return false;
     });
     if ($brand.length && $category.length < 1) {
-      console.log('getting products');
       getProducts();
     }
     if (location.hash.replace('#', '')) {
@@ -143,7 +142,6 @@
     };
     return $('.cart-info, .cart-number').click(function() {
       var products, template;
-      console.log('cart click');
       template = Handlebars.compile($('[template="cart"]').html());
       products = {
         "all": window.cart.getAll()
@@ -320,7 +318,6 @@
   window.cart.increment = function() {
     var count;
     count = parseInt($.cookie('count'));
-    console.log(count);
     if (!count) {
       count = 0;
     }
@@ -644,6 +641,7 @@
             wrapper.addClass('hasLinks');
           } else {
             wrapper.addClass('hasMap');
+            wrapper.addClass('mapStyle');
           }
         } else {
           $('body').css("overflow", "hidden");
@@ -664,6 +662,7 @@
         $('[modal]').addClass('hidding');
         setTimeout(function() {
           $('body').removeClass('body__modal');
+          window.Page.removeMap();
           $('[modal]').removeClass('show hidding');
           return $('body').css("overflow", "auto");
         }, 1000);
@@ -689,7 +688,7 @@
       drawMap: function(data) {
         var script, template;
         template = Handlebars.compile($('[template="address_map"]').html());
-        if (typeof window.map === 'undefined') {
+        if (typeof window.map !== 'object') {
           script = document.createElement('script');
           script.onload = function() {
             Modal.show(template, $('body'));
@@ -705,6 +704,15 @@
           Page.initMap();
           return false;
         }
+      },
+      removeMap: function() {
+        var wrapper;
+        wrapper = $('.modal_wrapper');
+        wrapper.removeClass('mapStyle');
+        wrapper.removeClass('hasMap');
+        $('iframe[name=gm-master]').remove();
+        window.map = false;
+        return false;
       },
       initMap: function() {
         var coords, customMapType, customMapTypeId, map, marker;

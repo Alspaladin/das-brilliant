@@ -10,7 +10,7 @@ window.Page = (->
 
   drawMap: (data) ->
     template = Handlebars.compile $('[template="address_map"]').html()
-    if(typeof window.map == 'undefined')
+    if(typeof window.map != 'object')
       script = document.createElement('script')
       script.onload = () ->
         Modal.show(template, $('body'))
@@ -25,6 +25,14 @@ window.Page = (->
       Modal.show(template, $('body'))
       Page.initMap()
       false
+
+  removeMap: ->
+    wrapper = $('.modal_wrapper')
+    wrapper.removeClass('mapStyle')
+    wrapper.removeClass('hasMap')
+    $('iframe[name=gm-master]').remove()
+    window.map = false
+    false
 
   initMap: ->
     customMapType = new google.maps.StyledMapType([

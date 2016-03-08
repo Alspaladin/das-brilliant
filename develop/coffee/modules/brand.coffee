@@ -66,7 +66,6 @@ $ ->
     false
 
   if $brand.length && $category.length < 1
-    console.log('getting products')
     getProducts()
     
   if location.hash.replace('#', '')
@@ -129,7 +128,6 @@ $ ->
 
     
   $('.cart-info, .cart-number').click () ->
-    console.log('cart click')
     template = Handlebars.compile $('[template="cart"]').html()
     products = {"all" : window.cart.getAll()}
     Modal.show template products

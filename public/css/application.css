@@ -1223,7 +1223,7 @@ body {
 }
 
 /* line 45 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
-.modal_wrapper.show.hasMap {
+.modal_wrapper.show.mapStyle {
   position: fixed;
   background: none;
   top: 100px;
@@ -1233,7 +1233,7 @@ body {
 }
 
 /* line 52 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
-.modal_wrapper.show.hasMap .modal_container {
+.modal_wrapper.show.mapStyle .modal_container {
   width: 800px;
   height: 500px;
   margin: 0 auto;
@@ -1242,7 +1242,7 @@ body {
 }
 
 /* line 58 : /Users/alsold/work/das-brilliant/develop/styl/project/modal.styl */
-.modal_wrapper.show.hasMap .modal_content {
+.modal_wrapper.show.mapStyle .modal_content {
   padding: 0;
   background: rgba(0,0,0,0.9);
   display: block;
