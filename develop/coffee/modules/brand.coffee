@@ -31,6 +31,8 @@ $ ->
       $(".breadcrumbs_item_brend").text(data.products[0]['brand'])
       data.products.forEach (product) ->
         drawListItem(product)
+      if(data.products.length < params.limit)
+        $('[role="brand.load-more"]').css("display","none")
 
   getProduct = (id) ->
     $.ajax

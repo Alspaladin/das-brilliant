@@ -35,6 +35,8 @@ $ ->
       $('.brand_actions').removeClass('hidden') if data.products.length > params.limit
       data.products.forEach (product) ->
         drawListItem(product)
+      if(data.products.length < params.limit)
+        $('[role="category.load-more"]').css("display","none")
 
   getProduct = (id) ->
     $.ajax
