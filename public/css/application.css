@@ -1664,13 +1664,16 @@ body {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   -webkit-justify-content: space-between;
      -moz-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-/* line 71 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 72 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item {
   color: #fff;
   text-align: left;
@@ -1681,29 +1684,29 @@ body {
   cursor: pointer;
 }
 
-/* line 80 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 81 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item img {
   max-height: 200px;
   margin: 0 auto 6px;
   display: block;
 }
 
-/* line 85 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 86 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_item:hover {
   color: #f30;
 }
 
-/* line 88 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 89 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_caption {
   font-size: 18px;
 }
 
-/* line 91 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 92 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brands_item_price {
   font-size: 24px;
 }
 
-/* line 94 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 95 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left,
 .brand-show_right {
   display: inline-block;
@@ -1711,32 +1714,32 @@ body {
   width: 50%;
 }
 
-/* line 100 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 101 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_left {
   text-align: center;
   padding-right: 25px;
 }
 
-/* line 104 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 105 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_right {
   padding-left: 25px;
 }
 
-/* line 107 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 108 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_category {
   margin-bottom: 7px;
   color: #888;
   font-size: 18px;
 }
 
-/* line 112 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 113 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_title {
   margin-bottom: 20px;
   font-size: 36px;
   color: #000;
 }
 
-/* line 117 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 118 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .link_to_contacts {
   margin-top: 10px;
   display: block;
@@ -1744,46 +1747,46 @@ body {
   text-decoration: none;
 }
 
-/* line 122 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 123 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .link_to_contacts:hover {
   color: #3eb5f1;
 }
 
-/* line 126 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 127 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_picture {
   margin-bottom: 20px;
   width: 100%;
   display: block;
 }
 
-/* line 131 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 132 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_price {
   font-size: 36px;
   color: #000;
 }
 
-/* line 135 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 136 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars {
   font-size: 20px;
 }
 
-/* line 138 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 139 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item {
   line-height: 25px;
 }
 
-/* line 141 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 142 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand-show_chars_item::before {
   content: '-';
   margin-right: 5px;
 }
 
-/* line 145 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 146 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 #brand {
   display: none;
 }
 
-/* line 148 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 149 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button {
   margin-top: 80px;
   background-color: #414141;
@@ -1798,33 +1801,33 @@ body {
   outline: none;
 }
 
-/* line 161 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 162 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button:hover {
   background-color: #505050;
 }
 
-/* line 164 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 165 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .button:active {
   background-color: #303030;
 }
 
-/* line 166 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 167 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .center-button {
   text-align: center;
 }
 
-/* line 169 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 170 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .brand_actions {
   text-align: center;
 }
 
-/* line 174 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 175 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-product {
   clear: both;
   margin-top: 30px;
 }
 
-/* line 179 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 180 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-image {
   text-align: center;
   height: 100px;
@@ -1833,7 +1836,7 @@ body {
   overflow: hidden;
 }
 
-/* line 186 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 187 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info-block,
 .cart-col,
 .cart-decrement,
@@ -1843,14 +1846,14 @@ body {
   float: left;
 }
 
-/* line 189 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 190 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info-block {
   margin-right: 5px;
   margin-left: 5px;
   width: 300px;
 }
 
-/* line 194 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 195 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-category,
 .cart-col-name,
 .cart-price-name,
@@ -1860,7 +1863,7 @@ body {
   font-size: 16px;
 }
 
-/* line 199 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 200 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-name,
 .cart-col-info,
 .cart-price-value,
@@ -1869,47 +1872,47 @@ body {
   font-size: 20px;
 }
 
-/* line 203 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 204 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-col {
   margin-right: 20px;
 }
 
-/* line 206 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 207 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-col {
   margin-left: 30px;
 }
 
-/* line 209 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 210 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-increment,
 .cart-decrement {
   cursor: pointer;
 }
 
-/* line 212 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 213 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-decrement {
   margin-right: 5px;
   margin-left: 25px;
 }
 
-/* line 216 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 217 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-increment {
   margin-left: 5px;
 }
 
-/* line 219 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 220 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-result {
   float: right;
   margin-top: 20px;
 }
 
-/* line 223 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 224 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-title {
   color: #242424;
   font-size: 35px;
   margin-bottom: 40px;
 }
 
-/* line 228 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 229 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-no {
   width: 100%;
   text-align: center;
@@ -1919,7 +1922,7 @@ body {
   display: none;
 }
 
-/* line 236 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 237 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .form_text {
   display: block;
   width: 100%;
@@ -1928,12 +1931,12 @@ body {
   outline: none;
 }
 
-/* line 243 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 244 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .form_text:focus {
   border: 1px solid #242424;
 }
 
-/* line 247 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 248 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart_error {
   width: 100%;
   text-align: center;
@@ -1942,7 +1945,7 @@ body {
   display: none;
 }
 
-/* line 254 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 255 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .cart-info {
   width: 100%;
   text-align: center;
@@ -1950,12 +1953,12 @@ body {
   font-size: 20px;
 }
 
-/* line 260 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 261 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .categories-list {
   padding: 0 20px 15px;
 }
 
-/* line 263 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 264 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .categories-header {
   color: #fff;
   display: block;
@@ -1965,12 +1968,12 @@ body {
   margin: 0 20px;
 }
 
-/* line 270 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 271 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .categories-header:hover {
   text-decoration: underline;
 }
 
-/* line 273 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 274 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .category-link {
   padding: 15px 0 0 0;
   font-size: 15px;
@@ -1980,7 +1983,7 @@ body {
   text-decoration: none;
 }
 
-/* line 280 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
+/* line 281 : /Users/alsold/work/das-brilliant/develop/styl/pages/brands.styl */
 .category-link:hover {
   text-decoration: underline;
 }

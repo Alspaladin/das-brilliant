@@ -172,8 +172,14 @@ app.get('/products/image/:id',function(req, res, next){
 
     products.findOne({"_id" : new ObjectID(req.params.id)}, { image_data: 1,image_name:1 },{safe:true},function(err,item){
       db.close();
-	res.writeHead('200', {'Content-Type': 'image/jpeg'});
-     res.end(item.image_data.value(),'binary');
+      if(item && item.image_data){
+        res.writeHead('200', {'Content-Type': 'image/jpeg'});
+        res.end(item.image_data.value(),'binary');    
+      }
+      else{
+        res.writeHead('404');
+        res.end();
+      }
     });
 
   });
