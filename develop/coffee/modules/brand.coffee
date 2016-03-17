@@ -17,9 +17,13 @@ $ ->
 
 
   drawProduct = (product) ->
+    console.log('drawing product');
     template = Handlebars.compile $('[template="product"]').html()
     Modal.show template product
     location.hash = product._id
+    $('.cart-add').click () ->
+      cart.add(product['_id'],product.category,product.name,1,product.price)
+      window.Modal.hide()
 
 
   getProducts = ->
@@ -46,10 +50,6 @@ $ ->
       window.settings['product'] = product
       product.attributes_values = product.attributes_values.slice(0,8)
       drawProduct product
-      $('.cart-add').click () ->
-        cart.add(product['_id'],product.category,product.name,1,product.price)
-        window.Modal.hide()
-        
 
 
   $(document).on 'click', '[role="brand.load-more"]', ->

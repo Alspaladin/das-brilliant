@@ -18,6 +18,7 @@ $ ->
 
 
   drawProduct = (product) ->
+    console.log('drawing product from category');
     template = Handlebars.compile $('[template="product"]').html()
     Modal.show template product
     location.hash = product._id
@@ -44,18 +45,6 @@ $ ->
       url: settings.HOST + "/products/#{id}"
     .done (data) ->
 
-  $(document).on 'click', '[product]', ->
-    getProduct($(@).attr('product'))
-    .done (product) ->
-      window.settings['product'] = product
-      product.attributes_values = product.attributes_values.slice(0,8)
-      drawProduct product
-      $('.cart-add').click () ->
-        cart.add(product['_id'],product.category,product.name,1,product.price)
-        window.Modal.hide()
-        
-
-
   $(document).on 'click', '[role="category.load-more"]', ->
     if $category.length < 1
       return false
@@ -74,10 +63,6 @@ $ ->
 
   if $category.length
     getProducts()
-    
-  if location.hash.replace('#', '')
-    getProduct(location.hash.replace('#', '')).done (product) ->
-      drawProduct product
 
   checkCartResult = () ->
     result = window.cart.getAll()
