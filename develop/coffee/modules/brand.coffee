@@ -17,7 +17,6 @@ $ ->
 
 
   drawProduct = (product) ->
-    console.log('drawing product');
     template = Handlebars.compile $('[template="product"]').html()
     Modal.show template product
     location.hash = product._id

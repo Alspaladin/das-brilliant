@@ -1,7 +1,6 @@
   window.cart = {}
 
   window.cart.add = (id,category,name,col,price) ->
-    console.log('adding to cart', id, category, name, col, price);
     elem = {"id":id, "category":category, "col":col, "name":name, "price":price}
     old = $.cookie(id)
     if(old)

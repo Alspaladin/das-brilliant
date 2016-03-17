@@ -18,7 +18,6 @@ $ ->
 
 
   drawProduct = (product) ->
-    console.log('drawing product from category');
     template = Handlebars.compile $('[template="product"]').html()
     Modal.show template product
     location.hash = product._id
