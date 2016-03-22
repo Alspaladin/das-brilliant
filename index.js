@@ -111,7 +111,7 @@ text = "<html><head></head><body>"+text+"</body></html>";
 var message = {
    "text":    text, 
    from:    "Sender <sendered@yandex.ru>", 
-   to:      "someone <alexandersvinin@gmail.com>, another <alexandersvinin@gmail.com>",
+   to:      "someone <alexandersvinin@gmail.com>, <npashenkov@dasbrilliant.com>, <dmalov@dasbrilliant.com>",
    subject: "Новый заказ на "+price.toFixed(2)+"руб",
    "MIME-Version": "1.0",
     "Organization": "dasbrilliant",
