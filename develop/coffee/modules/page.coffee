@@ -18,6 +18,11 @@ window.Page = (->
   handleSlider: ->
     $('.flexslider').flexslider({
       animation: "slide",
+      animationLoop: true,
+      easing: 'ease-in-out',
+      slideshow: true,
+      slideshowSpeed: 5000,
+      animationSpeed: 700,
       customDirectionNav: $(".flexslider .slider_arrow")
     });
 

@@ -104,8 +104,8 @@
 
 .header_buttons
   width 123px
-  border-left 1px solid white
-  border-right 1px solid white
+  border-left 1px solid rgba(255, 255, 255, 0.5)
+  border-right 1px solid 
   display inline-block
   vertical-align top
   padding 0 30px
@@ -137,68 +137,24 @@
 .socials
   vertical-align top
   padding: 0 0 0 25px
-  m_inline-blocks()
   display inline-block
 
-.social
-  position relative
+.social.zmdi
+  vertical-align top
+  display inline-block
+  cursor pointer
   margin 0
-
-  &::before,
-  &::after
-    display block
-    position absolute
-    left 0
-    top 0
-    width 100%
-    height 100%
-    content ''
-    transition all 0.3s ease
-
-  &::before
-    opacity 0
-
-  &::after
-    opacity 1
-
   &:hover
-    
-    &::before
-      opacity 1
+    link_color()
 
-    &::after
-      opacity 0
-
-.social__fb
-  width 10px
-  height 19px
+.social.zmdi-facebook
   margin 0 20px 0 0
+  font-size 22px
+  line-height 20px
 
-  &::before
-    background-image url(public'images/fb__hover.png')
-
-  &::after  
-    background-image url(public'images/fb.png')
-
-.social__tw
-  width 27px
-  height 19px
-
-  &::before
-    background-image url(public'images/tw__hover.png')
-
-  &::after  
-    background-image url(public'images/tw.png')
-
-.social__vk
-  width 27px
-  height 15px
-
-  &::before
-    background-image url(public'images/vk__hover.png')
-
-  &::after  
-    background-image url(public'images/vk.png') 
+.social.zmdi-vk
+  font-size 22px
+  line-height 20px
 
 .cart-info
   background-image url("../images/cart-white.svg")
