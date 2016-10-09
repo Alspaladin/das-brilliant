@@ -30,7 +30,7 @@ var EmailServer  = email.server.connect({
 //app.use('/public', express.static('/Users/alsold/work/das-brilliant/public'));
 app.use('/public', express.static(config.app_dir));
 
-app.set('port', (process.env.PORT || 80));
+app.set('port', (process.env.PORT || config.port));
 //app.set('views', '/Users/alsold/work/das-brilliant/develop/jade');
 app.set('views', config.jade_dir);
 app.set('view engine', 'jade');
