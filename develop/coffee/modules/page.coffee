@@ -8,6 +8,19 @@ window.Page = (->
       false
     false
 
+  handleMenu: ->
+    $('header .menu_toggler').on 'click', (e, data) ->
+      $('header .menu').toggleClass 'expanded' 
+      e.preventDefault()
+      false
+    false
+
+  handleSlider: ->
+    $('.flexslider').flexslider({
+      animation: "slide",
+      customDirectionNav: $(".flexslider .slider_arrow")
+    });
+
   drawMap: (data) ->
     template = Handlebars.compile $('[template="address_map"]').html()
     if(typeof window.map != 'object')

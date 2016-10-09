@@ -4,13 +4,63 @@ block page_header
   = 'Магазин немецкой бытовой техники'
 
 block page_container
-  .index_text
-    | Рады приветствовать вас в магазине 
-    br
-    | немецкой бытовой техники и кухни&nbsp;
-    span Das Brilliant
-    |.
-    br
-    a(href="#map", style="line-height:30px;").map_link.contact_link_info Мы на карте
-  .index_catalog-link
-    a.catalog-link(href="/brands")
+  .index_welcome_part
+    .index_text
+      | Добро пожаловать в магазин немецкой бытовой техники
+    .index_subtext
+      | В нашем магазине вы сможете найти всю необходимую
+      br
+      | технику для вашей кухни и прачечной.
+    .index_buttons
+      a(href="/brands").index_button.button_catalog Каталог
+      a(href="#consult").index_button.button_consult Консультация специалиста
+  .index_promo_part
+    .promo_slider.flexslider
+      .slider_arrow.promo_slider_arrow.slider_arrow_left.flex-prev.fa.fa-angle-left
+      ul.promo_slider_caret.slides
+        li.promo_slide
+          .promo_slide_inner
+            .slide_image.slide_image_1
+            .slide_text
+              | Скидки 10% при покупке комплекта бытовой техники
+        li.promo_slide
+          .promo_slide_inner
+            .slide_image.slide_image_2
+            .slide_text
+              | Скидки 20% при покупке комплекта бытовой техники
+        li.promo_slide
+          .promo_slide_inner
+            .slide_image.slide_image_3
+            .slide_text
+              | Скидки 30% при покупке комплекта бытовой техники
+        li.promo_slide
+          .promo_slide_inner
+            .slide_image.slide_image_4
+            .slide_text
+              | Скидки 40% при покупке комплекта бытовой техники
+        li.promo_slide
+          .promo_slide_inner
+            .slide_image.slide_image_5
+            .slide_text
+              | Скидки 50% при покупке комплекта бытовой техники
+      .slider_arrow.promo_slider_arrow.slider_arrow_right.flex-next.fa.fa-angle-right
+  .index_icons_part
+  .index_map_part
+    .index_map_container
+      include includes/address_map
+    .index_map_description
+      .map_address_name
+        | Мы находимся в ТК "ОРИОН"
+      .map_address_text
+        | ул. Федюнинского, д. 43, Тюмень, 625062
+      .map_time_name
+        | Время работы
+      .map_time_text
+        | Ежедневно с 10:00 до 21:00
+      .map_info_name
+        | Информация
+      .map_info_text
+        a(href="#brands").index_link Юридическое лицо
+        a(href="#consult").index_link Оплата и доставка
+        a(href="#consult").index_button.button_write Написать нам
+        

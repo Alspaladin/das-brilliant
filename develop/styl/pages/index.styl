@@ -1,35 +1,177 @@
 .page__index,
 
   &,
-  .header::before,
   .footer::before
     background-image url(public'/images/bg_index.jpg')
 
   .nav
-    margin-bottom 73px
 
   .page_container
     padding-top 51px  
 
 .index_text
-  width 387px
   text-align center
-  margin 0 auto 190px
-  font-family 'Didact Gothic', sans-serif
+  padding 162px 106px 0 106px
+  font-size 36px
   line-height 21px
-  font-size 18px
+  font-weight bold
 
-  span
-    font-weight 600
-    font-family 'Exo 2', sans-serif
-
-.index_catalog-link
+.index_subtext
+  margin 40px 320px
+  font-size 22px
+  line-height 26px
   text-align center
 
-.map_link
+.index_buttons
+  text-align center
+  margin 10px auto 0
+
+.index_button
   display inline-block
-  text-align center
-  margin-top 30px
+  padding 10px 0
+  height 60px
+  background white
+  border-radius 30px
+  text-decoration none
+  vertical-align middle
+  color black
+  font-size 18px
+  line-height 38px
+  margin: 18px 36px
+
+.button_catalog
+  width 228px
+
+.button_consult
+  color white
+  background #00AFBC
+  width 310px
+  
+.index_promo_part
+  height 200px
+  background white
+  position relative
+.index_promo_part
+  .flex-viewport
+    width 1280px
+    height 100%
+
+.index_promo_part 
+  .flex-control-nav
+    display none
+
+.promo_slider
+  height 100%
+.promo_slider_arrow
+  color black
+  position absolute
+  width 14px
+  height 36px
+  top 82px
+  cursor pointer
+  z-index 10
+.promo_slider_arrow.fa
+  font-size 36px
+  line-height 36px
+
+.promo_slider_arrow.slider_arrow_left
+  left 40px
+
+.promo_slider_arrow.slider_arrow_right
+  right 40px
+  
+.promo_slider_caret
+  position absolute
+.promo_slide
+  width 1280px
+
+.promo_slide_inner
+  width 100%
+  padding 40px 358px
+  display table
+
+.slide_image
+  border-radius 60px
+  background gray
+  width 120px
+  height 120px
+  float left
+
+.slide_text
+  color black
+  padding 0 0 0 30px
+  display table-cell
+  vertical-align middle
+  line-height 26px
+  font-size 22px
+
+.index_welcome_part
+  height 90vh
+
+.index_icons_part
+  height 500px
+  
+.index_map_part
+  background white
+  padding 86px
+  height 620px
+
+.index_map_container
+  width 580px
+  height 100%
+  float left
+  margin-right 40px
+
+.map_address_name
+  color black
+  font-size 24px
+  font-weight bold
+  line-height 29px
+  margin-bottom 10px
+
+.map_address_text
+  color black
+  font-size 16px
+  line-height 18px
+  margin-bottom 30px
+
+.map_time_name
+  color black
+  font-size 24px
+  line-height 29px
+  margin-bottom 10px
+
+.map_time_text
+  color black
+  font-size 16px
+  line-height 18px
+  margin-bottom 40px
+
+.map_info_name
+  color black
+  font-size 24px
+  line-height 29px
+  margin-bottom 8px
+
+.map_info_text
+  color black
+  font-size 16px
+  line-height 18px
+
+.index_link
+  color #00AFBC
+  display block
+  font-size 16px
+  line-height 23px
+
+.button_write
+  background #00AFBC
+  border-radius 30px
+  line-height 20px
+  color white
+  padding 18px 38px
+  margin 30px 0 0 0
+  vertical-align top
   
 #map
   width 800px
