@@ -3,32 +3,33 @@ html(lang="en")
   include ../includes/head
 body.page(data-role="page" class='page__'+page)
   header.header
-    a.logo(data-init="data-init" href="/")
-    .menu(data-init="data-init")
-      .menu_toggler.zmdi.zmdi-menu
-      .menu_block
-        a.menu_link(href="/") Главная
-        a.menu_link(href="/contacts") Контакты
-        a.menu_link(href="/categories") Категории
-        a.menu_link(href="/brands") Бренды
-    
-    .header_phone(data-init="data-init")
-      i.zmdi.zmdi-smartphone-android
-      | 8 800 3333 555
+    .header_wrapper
+      a.logo(data-init="data-init" href="/")
+      .menu(data-init="data-init")
+        .menu_toggler.zmdi.zmdi-menu
+        .menu_block
+          a.menu_link(href="/") Главная
+          a.menu_link(href="/contacts") Контакты
+          a.menu_link(href="/categories") Категории
+          a.menu_link(href="/brands") Бренды
+      
+      .header_phone(data-init="data-init")
+        i.zmdi.zmdi-smartphone-android
+        | 8 800 3333 555
 
-    .header_buttons(data-init="data-init")
-      .header_wishlist.fa.fa-heart
-      .header_busket.zmdi.zmdi-shopping-cart
+      .header_buttons(data-init="data-init")
+        .header_wishlist.fa.fa-heart
+        .header_busket.zmdi.zmdi-shopping-cart
 
-    .socials(data-init="data-init")
-      a.social.social__fb(href="#")
-      a.social.social__vk(href="#")
-    
-    if page == 'brands' || page == 'brand' || page == 'category' || page == 'product'
-      nav.nav(data-init="data-init")
-        include ../includes/nav
-      nav.breadcrumbs
-        include ../includes/breadcrumbs
+      .socials(data-init="data-init")
+        a.social.social__fb(href="#")
+        a.social.social__vk(href="#")
+      
+      if page == 'brands' || page == 'brand' || page == 'category' || page == 'product'
+        nav.nav(data-init="data-init")
+          include ../includes/nav
+        nav.breadcrumbs
+          include ../includes/breadcrumbs
   .page_wrapper(data-init="data-init")
     .page_container
       block page_container
@@ -36,6 +37,7 @@ body.page(data-role="page" class='page__'+page)
   include ../includes/product
   include ../includes/categories
   include ../includes/cart
+  include ../includes/address_map_async
   include ../includes/order
   script(src="/public/js/vendor/jquery-1.10.2.min.js")
   script(src="/public/js/vendor/handlebars-v3.0.1.js")

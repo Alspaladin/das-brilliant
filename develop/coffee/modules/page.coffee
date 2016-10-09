@@ -22,11 +22,13 @@ window.Page = (->
     });
 
   drawMap: (data) ->
-    template = Handlebars.compile $('[template="address_map"]').html()
+    template = Handlebars.compile $('[template="address_map_async"]').html()
+    if(!document.getElementById('index_map_container'))
+      false
     if(typeof window.map != 'object')
       script = document.createElement('script')
       script.onload = () ->
-        Modal.show(template, $('body'))
+        $('#index_map_container').html(template)
         Page.initMap()
         false
 
@@ -34,10 +36,7 @@ window.Page = (->
       script.async = true
       document.getElementsByTagName('head')[0].appendChild(script)
       false
-    else
-      Modal.show(template, $('body'))
-      Page.initMap()
-      false
+    false
 
   removeMap: ->
     wrapper = $('.modal_wrapper')

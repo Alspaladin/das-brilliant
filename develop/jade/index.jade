@@ -44,23 +44,92 @@ block page_container
             .slide_text
               | Скидки 50% при покупке комплекта бытовой техники
       .slider_arrow.promo_slider_arrow.slider_arrow_right.flex-next.fa.fa-angle-right
-  .index_icons_part
+  .index_features_part
+    .features_title Наши преимущества
+    .featires_container
+      .feature_item
+        .feature_icon
+          include includes/svg/1.svg
+        .feature_text Самые привлекательные цены
+
+      .feature_item
+        .feature_icon
+          include includes/svg/4.svg
+        .feature_text Квалифицированные консультанты
+
+      .feature_item
+        .feature_icon
+          include includes/svg/7.svg
+        .feature_text
+          | Бесплатная доставка
+          br
+          | в любой регион России
+
+
+      .feature_item
+        .feature_icon
+          include includes/svg/2.svg
+        .feature_text
+          | Поставки напрямую
+          br
+          | от производителя
+
+      .feature_item
+        .feature_icon
+          include includes/svg/5.svg
+        .feature_text
+          | Индивидуальный подход
+          br
+          | к каждому клиенту
+
+      .feature_item
+        .feature_icon
+          include includes/svg/8.svg
+        .feature_text
+          | Бесплатное хранение
+          br
+          | вашего товара до 1 года
+
+
+      .feature_item
+        .feature_icon
+          include includes/svg/3.svg
+        .feature_text Только проверенная техника
+
+      .feature_item
+        .feature_icon
+          include includes/svg/6.svg
+        .feature_text
+          | Гарантийное и постгарантийное
+          br
+          | обслуживание
+      .feature_item
+        .feature_icon
+          include includes/svg/9.svg
+        .feature_text
+          | Финансовый курьер привезет договор
+          br
+          | и возьмёт предоплату
+        
   .index_map_part
-    .index_map_container
-      include includes/address_map
-    .index_map_description
-      .map_address_name
-        | Мы находимся в ТК "ОРИОН"
-      .map_address_text
-        | ул. Федюнинского, д. 43, Тюмень, 625062
-      .map_time_name
-        | Время работы
-      .map_time_text
-        | Ежедневно с 10:00 до 21:00
-      .map_info_name
-        | Информация
-      .map_info_text
-        a(href="#brands").index_link Юридическое лицо
-        a(href="#consult").index_link Оплата и доставка
-        a(href="#consult").index_button.button_write Написать нам
+    .index_map_wrapper
+      .index_map_container#index_map_container
+        
+      .index_map_description
+        .map_address_name
+          | Мы находимся в ТК "ОРИОН"
+        .map_address_text
+          | ул. Федюнинского, д. 43, Тюмень, 625062
+        .map_time_name
+          | Время работы
+        .map_time_text
+          | Ежедневно с 10:00 до 21:00
+        .map_info_name
+          | Информация
+        .map_info_text
+          a(href="#brands").index_link Юридическое лицо
+          br
+          a(href="#consult").index_link Оплата и доставка
+          br
+          a(href="#consult").index_button.button_write Написать нам
         

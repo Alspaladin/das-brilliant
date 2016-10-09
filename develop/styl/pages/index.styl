@@ -53,8 +53,9 @@
   position relative
 .index_promo_part
   .flex-viewport
-    width 1280px
+    width 100vw
     height 100%
+    margin 0 auto
 
 .index_promo_part 
   .flex-control-nav
@@ -70,9 +71,13 @@
   top 82px
   cursor pointer
   z-index 10
+
 .promo_slider_arrow.fa
   font-size 36px
   line-height 36px
+
+  &:hover
+    link_color()
 
 .promo_slider_arrow.slider_arrow_left
   left 40px
@@ -83,12 +88,13 @@
 .promo_slider_caret
   position absolute
 .promo_slide
-  width 1280px
+  width 100vw
 
 .promo_slide_inner
   width 100%
   padding 40px 358px
   display table
+  background #f2f2f2
 
 .slide_image
   border-radius 60px
@@ -108,13 +114,60 @@
 .index_welcome_part
   height 90vh
 
-.index_icons_part
-  height 500px
+.index_features_part
+  height 644px
+  background white
+
+.features_title
+  lato()
+  color black
+  font-size 24px
+  line-height 30px
+  font-weight bold
+  padding 50px 0 40px 0
+  margin 0 auto
+  text-align center
+
+.featires_container
+  height 522px
+  margin 0 auto
+  padding-bottom 40px
+  width 1200px
+  border-bottom 1px solid #00afbc
+  display flex
+  flex-direction column
+  flex-wrap wrap
+  justify-content space-between
+  align-items flex-start
+  align-content flex-start
+
+.feature_item
+  width 400px
+  height 160px
+  flex-grow 1
+  lato()
+  color black
+
+.feature_icon
+  width 50px
+  height 50px
+  text-align center
+  margin 0 auto 14px
+
+.feature_text
+  font-size 22px
+  line-height 28px
+  text-align center
+  
   
 .index_map_part
   background white
-  padding 86px
+  padding 80px
   height 620px
+
+.index_map_wrapper
+  width 1280px
+  margin 0 auto
 
 .index_map_container
   width 580px
@@ -162,7 +215,10 @@
   color #00AFBC
   display block
   font-size 16px
+  text-decoration none
+  border-bottom 1px dotted #00afbc
   line-height 23px
+  display inline-block
 
 .button_write
   background #00AFBC
@@ -174,5 +230,5 @@
   vertical-align top
   
 #map
-  width 800px
+  width 580px
   height 500px

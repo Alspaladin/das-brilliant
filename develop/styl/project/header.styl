@@ -7,6 +7,10 @@
   height 80px
   background black
 
+.header_wrapper
+  width 1280px
+  margin 0 auto
+
 .logo
   display inline-block
   z-index 2
@@ -60,15 +64,17 @@
   left 0
   height 154px;
   background rgba(0, 0, 0, 0.25)
-  display none
   padding 20px 0 0 0
   text-align center
+  transform translate3d(0px, -300px, 0px)
 
 .menu.expanded
   .menu_toggler:before
     content '\f136'
 
   .menu_block
+    transform translate3d(0px, 0px, 0px)
+    transition transform 0.5s ease
     display block
 
 .menu_link
@@ -97,7 +103,7 @@
   vertical-align top
 
 .header_buttons
-  width 122px
+  width 123px
   border-left 1px solid white
   border-right 1px solid white
   display inline-block
